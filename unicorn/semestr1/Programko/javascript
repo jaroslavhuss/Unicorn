@@ -1,0 +1,532 @@
+Co se používalo k tvorbě dynamických webových stránek před tím, než vznikl JavaScript?
+prakticky nic
+
+
+
+Pod kterými jmény je či byl známý JavaScript?
+Mocha
+JScript
+LiveScript
+ECMAScript
+
+
+
+Která organizace vytvořila a udržuje první standard jazyka JavaScript?
+Ecma International (dříve European Computer Manufacturers Association, ECMA)
+
+
+Jak se jmenuje první všeobecně rozšířené běhové prostředí JavaScriptu mimo webové prohlížeče?
+Node.js
+
+
+
+Je JavaScript nejpopulárnější programovací jazyk na světě?
+Ano
+
+
+Co je programovací paradigma?
+programovací styl
+
+
+
+Je JavaScript jazyk multiparadigmatický?
+Ano
+
+
+Je v JavaScriptu možné využít imperativní programování?
+Ano
+
+
+Je v JavaScriptu možné využít funkcionální programování?
+Ano
+
+
+
+Která další paradigmata je možné v JavaScriptu používat?
+generické programování
+metaprogramování
+
+
+
+Kde se dnes JavaScript může použít?
+Webové stránky
+Hry
+Mobilní aplikace
+Excelová makra
+
+
+Kde (v kterém běhovém prostředí) se JavaScriptové programy nejčastěji spouštějí?
+V prohlížeči
+
+
+Ke které nevýhodě vede popularita JavaScriptu?
+
+
+
+
+Ke které nevýhodě vede popularita JavaScriptu?
+Mnoho dostupných knihoven, které řeší stejné věci - jinak a s různým přístupem a kvalitou.
+Nízká kvalita mnoha dostupných knihoven.
+
+
+Je možné v programu specifikovat konkrétní verzi JavaScriptu, která se pro spuštění programu použije?
+Ne
+
+
+
+Co znamená zkratka HTTP?
+Hypertext Transfer Protocol
+
+
+
+
+Co znamená zkratka HTML?
+
+
+
+
+Jak se jmenuje první všeobecně rozšířené běhové prostředí JavaScriptu mimo webové prohlížeče?
+Node.js
+
+
+
+Které technologie tvoří základ celého ekosystému JavaScriptu?
+npm
+Node.js
+prohlížeče
+
+
+
+Jak se nazývá balíčkovací systém JavaScriptu?
+npm
+
+
+Jak se jmenuje nejpoužívanější knihovna (framework) pro tvorbu webového serveru v Node.js?
+Express
+
+
+
+Jak se v JavaScriptu deklarují proměnné?
+let name = "Arthur";
+let answer = 42;
+
+
+
+Kterým způsobem se v JavaScriptu přiřazuje hodnota do proměnné?
+=
+
+
+
+Který bude výstup tohoto programu?
+SyntaxError: Identifier 'x' has already been declared
+
+
+
+
+Které skupiny znaků pojmenovávají proměnné?
+písmena české abecedy (např. áůř)
+Povoleno, avšak nedoporučováno.
+symboly aritmetických operací (např. +-:)
+Nepovoleno
+písmena anglické abecedy (např. abc)
+Povoleno a doporučováno.
+číslice (např. 123)
+Povoleno, avšak ne jako první znak názvu.
+
+
+
+Které z těchto názvů proměnných lze označit jako sebepopisné?
+Numberlkjsdůlfj
+Age
+
+
+
+
+Které z úryvků je možné považovat za výraz?
+arthur
+7 / arthur
+-7
+
+
+
+Má každý výraz svou hodnotu?
+Ano
+
+
+
+Je v JavaScriptu příkaz to samé, co výraz?
+Ne
+
+
+
+
+Následující úryvky je možné považovat za příkazy. Který z nich však nelze (bez středníku) považovat za výraz?
+let answer = 42;
+
+
+
+Které z úryvků je možné považovat za blok?
+{
+  let answer;
+  answer = 42;
+}
+{}
+
+Kterým způsobem lze do proměnné přiřadit číslo typu Number?
+let nr = 42;
+let nr = 0x2a;
+let nr = 4.2;
+
+Která „slova“ se dle běžných konvencí používají v komentářích pro označení části kódu, která je nekompletní nebo nefunkční?
+FIXME
+@TODO
+
+
+
+
+Co je JSDoc?
+Nástroj na generování dokumentace.
+Způsob, jak dokumentovat programy pomocí komentářů.
+
+
+
+
+Mají JSDoc komentáře význam, i když se v projektu nepoužívá generátor dokumentace JSDoc?
+Ano
+
+
+
+
+Jaké je největší celé číslo, které datový typ Number reprezentuje přesně?
+2⁵³ - 1
+
+
+
+Které číslo vypíše do konzole tento kód?
+0.30000000000000004
+
+
+
+Co je třeba doplnit do programu, aby se do konzole vypsalo záporné nekonečno?
+0
+
+
+
+Je možné datový typ BigInt použít pro desetinná čísla?
+Ne
+
+
+
+
+Kterým způsobem lze do proměnné přiřadit číslo typu BigInt?
+let nr = 0x2an;
+let nr = 42n;
+
+
+
+
+Jaké je největší celé číslo, které datový typ BigInt reprezentuje přesně?
+závisí na velikosti paměti a omezení prostředí
+
+
+
+
+console.log(42_000);
+42000
+
+
+
+Kterým způsobem lze v řetězci uplatnit znak jednoduché uvozovky ', např. v textu I'm JS?
+let str = 'I\'m JS.';
+let str = "I'm JS.";
+
+
+
+
+Kterým způsobem lze zapsat dlouhý řetězec tak, aby byl přehledný?
+let str = "This is \
+a very long string.";
+
+
+Kterým způsobem lze do řetězce vložit odřádkování?
+let str = "This is a string.\nIt has two lines.";
+let str = `This is a string.
+It has two lines.`;
+
+
+
+Kterým způsobem lze do řetězce vložit znak, který není na klávesnici, např. znak U+1F30D 🌍?
+let str = "Hello 🌍.";
+let str = "Hello \u{1F30D}.";
+
+
+
+Za jak dlouhý považuje JavaScript řetězec "⚽❌🏃"?
+Je složen z těchto znaků:
+4
+
+
+
+
+Kterým způsobem lze vytvořit nový symbol a přiřadit ho do proměnné?
+let sym = Symbol("my symbol");
+let sym = Symbol();
+
+
+
+Který kód je třeba doplnit stejně do obou řádků, aby v obou proměnných byl ten samý symbol?
+Žádná z ostatních odpovědí není správná
+
+Je nějaký rozdíl mezi těmito dvěma programy nebo jejich výstupy do konzole? (undefined)
+Ne
+
+
+
+Jakým způsobem lze vytvořit objekt a přiřadit ho do proměnné?
+let person = {name: "Arthur", planet: "Earth"};
+let person = {"name": "Arthur", "planet": "Earth"};
+
+
+
+Kterým způsobem lze z objektu přečíst nějakou hodnotu?
+let person = {"name": "Arthur", "planet": "Earth"};
+let name = person.name;
+let person = {"name": "Arthur", "planet": "Earth"};
+let name = person["name"];
+let key = "name";
+let person = {"name": "Arthur", "planet": "Earth"}; 
+let name = person[key];
+
+
+Kterým způsobem lze v objektu změnit hodnotu pod klíčem name?
+let person = {"name": "Arthur", "planet": "Earth"};
+person.name = "Trillian";
+let person = {"name": "Arthur", "planet": "Earth"};
+person["name"] = "Trillian";
+
+
+
+Co vypíše do konzole tento program?
+"Arthur"
+
+
+
+Kterým způsobem je možné použít symbol jako klíč objektu?
+let sym = Symbol();
+let obj = {
+  [sym]: 42
+};
+let sym = Symbol();
+let obj = {};
+obj[sym] = 42;
+
+
+
+
+Kterým způsobem lze vytvořit pole a přiřadit ho do proměnné?
+let names = new Array("Arthur", "Trillian", "Ford");
+let names = ["Arthur", "Trillian", "Ford"];
+
+
+
+
+Lze nějakým způsobem v JavaScriptu změnit délku pole?
+Ano
+
+
+Je možné do vlastnosti length také nějakou hodnotu zapsat?
+Ano
+
+Kterým způsobem lze do proměnné přiřadit tuto matici?
+let matice = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+
+
+
+Co je třeba přidat do programu, aby vypsal do konzole číslo 6?
+[1][2]
+
+
+
+
+Kterým způsobem lze vytvořit novou prázdnou mapu?
+new Map()
+
+
+
+Kterým způsobem lze zjistit, zda je v mapě klíč "answer"?
+Has
+
+
+
+Je rozdíl mezi řazením prvků v objektu a v mapě?
+Ano
+
+
+
+Kterým způsobem lze vytvořit novou prázdnou množinu (set)?
+new Set()
+
+
+
+Co je třeba přidat do programu na obě zvýrazněná místa, aby vypsal do konzole dvakrát false?
+Delete
+
+
+
+Je JavaScript slabě typovaný jazyk?
+
+
+Co poskytuje objektový model?
+názvosloví
+
+
+
+Ve kterém světě vznikl objektový model?
+v objektově orientovaném světě
+
+
+
+
+Reprezentuje následující objekt nějakou entitu?
+Ano
+
+
+Reprezentuje následující objekt nějakou entitu?
+let surnames = {
+  Trillian: "Astra",
+  Arthur: "Dent",
+  Zaphod: "Beeblebrox"
+};
+NE
+
+
+
+
+Které z těchto programů vypíší do konzole hodnotu true?
+console.log("42" !== 42);
+let nr;
+console.log(nr === undefined);
+
+
+
+
+Které z těchto programů vypíší do konzole hodnotu true?
+let obj = {name: "Arthur"};
+let otherObj = obj;
+console.log(obj === otherObj);
+
+
+Které z těchto programů vypíší do konzole hodnotu true?
+console.log([4, 2] == "4,2");
+console.log([42] == 42);
+console.log(false == [[[]]]);
+console.log(true == [1]);
+
+
+
+
+Co je možné přidat do programu, aby vypsal do konzole hodnotu true?
+>
+=>
+
+
+
+
+Jak funguje porovnávání pomocí operátorů >, <, >=, <= v případě, že jsou oba operandy řetězce?
+Řetězce jsou porovnány podle Unicode kódů
+
+
+
+Co vypíše do konzole tento program?
+24
+
+
+
+
+Seřaďte řádky programu tak, aby do konzole vypsal číslo 42.
+let answer = 22;
+answer = answer + 2 * 3;
+answer = 14 + -answer * 2;
+console.log(-answer);
+
+
+
+Zjistí tento úryvek, zda je číslo n liché?
+n % 2 === 1 - NE
+
+
+
+Přiřaďte k sobě názvy logických operací, jejich značky a operátor, kterým se tyto operace provádějí v JavaScriptu.
+konjunkce
+AND   ∧
+&&
+disjunkce
+OR   ∨
+||
+negace
+NOT   ¬
+!
+exkluzivní disjunkce
+XOR   ⊕
+!==
+
+
+
+
+
+Kterým způsobem lze zjednodušit tento výraz?
+Proměnné p a q obsahují hodnotu pravda nebo nepravda.
+p || q
+
+
+
+console.log(p && q && !p || !q);
+console.log(p && !q || !p && q);
+
+let p = true;
+let q = true; -> FALSE FALSE
+
+let p = true;
+let q = false; TRUE TRUE
+
+let p = false; 
+let q = true; FALSE TRUE
+
+
+let p = false;
+let q = false; TRUE FALSE
+
+
+
+teré operátory přiřazení, kombinované s matematickým operátorem, JavaScript nabízí?
+&&=
+**=
+%=
+*=
+
+
+
+
+Existují v JavaScriptu operátory kombinující operátor přiřazení s logickými operátory (&&= a ||=)?
+Ano
+
+
+
+Kterým způsobem lze ověřit, zda je nějaká hodnota typu Number, uložená v proměnné answer, konečná (tedy nejde o kladné nebo záporné nekonečno)?
+answer > -Infinity && answer < Infinity
+Number.isFinite(answer)
+
+
+
+Kterým způsobem lze ověřit, zda je nějaká hodnota typu Number, uložená v proměnné answer, hodnota NaN?
+answer !== answer
+Number.isNaN(answer)
+
+
+
+Pro přidávání prvků do pole slouží metody push (na konec pole) a unshift (na začátek pole). Naopak pro odebrání prvku z pole lze použít pop (odebrání z konce pole) a shift (ze začátku pole), tyto metody odebraný prvek vrací jako návratovou hodnotu. Na konci našeho programu jsou tedy v poli pouze dva prvky.

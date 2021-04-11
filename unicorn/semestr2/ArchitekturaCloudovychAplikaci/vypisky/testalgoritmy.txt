@@ -1,0 +1,936 @@
+How can we calculate the complexity of the algorithm?
+using the number of comparisons
+using the number of elementary operations on data
+using the number of elementary operations
+
+The speed of the algorithm depends only on the volume of input data.
+No
+
+The complexity of algorithm indicates how fast the algorithm is, or how many elementary operations it performs with respect to the set of input data
+
+To express the time complexity we use a function that depends on the size of the input data.
+
+We can look at the complexity of the algorithm from various points of view. Form the correct statement.
+Space complexity The computer's memory is sufficient enough to run the algorithm.
+Time complexity We use a function to express it.
+
+From which points of view can the complexity of an algorithm be perceived?
+time complexity
+space complexity
+
+How do we mark the asymptotic complexity of an algorithm?
+O(f(N))
+
+Asymptotic complexity is in fact the division of algorithms into complexity classes
+
+Arrange the asymptotic complexities in ascending order
+O1, LOG, n^2, N!
+
+Let's have an algorithm A with running time n+1000 and an algorithm B with running time 
+4n, where n  is the number of input data. Which algorithm in terms of time complexity 
+is more suitable for its low value n(n<5)?
+B
+
+With constant complexity, the amount of input data does not matter and the processing time will be the same.
+
+Let's have an algorithm A with running time n+1000 and an algorithm B with running time 
+4n, where n is the number of input data. Which algorithm in terms of time complexity
+ is more suitable for the values n∈(−∞;+∞)?
+A
+
+Arrange asymptotic complexities in ascending order.
+logarithmic
+quadratic
+cubic
+exponential
+
+We were given the symbols A and B , the symbol A = 2 and B = 100 . If we can write the number 206 as B B A A A or A A A B B , or A A B B A etc. Which numeral system are we talking about?
+non-positional numeral system
+
+We were given the symbols A and B , the symbol A = 2 and B = 20 . If we can write the number 42 as B B A , B A B or A B B . Which numeral system are we talking about?
+non-positional numeral system
+
+We were given the decimal number 256. Which does number system it belong to?
+positional number system
+
+e were given the decimal number 1512 written in the format 1 ⋅ 10 3 + 5 ⋅ 10 2 + 1 ⋅ 10 1 + 2 ⋅ 10 0 . Which does number system it belong to?
+positional number system
+
+We use the binary numeral system to represent data in digital devices.
+
+We use the numbers 1 − 10 for decimal notation.
+No
+
+Convert the number 0010 0010 from binary to decimal numeral system.
+1.128643216842100100010 | 2.0⋅128+0⋅64+1⋅32+0⋅16+0⋅8+0⋅4+1⋅2+0⋅1 | 3.34
+
+Convert the number 00011001 from binary to decimal numeral system.
+25
+
+Convert the number 224 from decimal to binary numeral system.
+11100000
+
+Convert the number 56 from decimal to binary numeral system.
+00111000
+
+If x = 2 and y = 3 , then the operation ! ( x == y ) returns TRUE.
+TRUE
+
+If x = 5 and y = 2 . Then the operation ( x > y ) && ( y > 5 ) returns FALSE.
+FALSE
+
+If x = 0000 0100 and y = 0000 0101 . Then the operation x AND y returns 00000100.
+
+Bitwise multiplication returns 1 if both factors are 1, otherwise returns 0.
+
+Bitwise addition returns 1 if at least one addend is 1, otherwise returns 0.
+
+If x = 1 and y = 6 . Then the operation ( x > 2 ) || ( y == 6 ) returns TRUE.
+
+If x = 0000 0100 and y = 0000 0101 . Then the operation x OR y returns 00000101.
+
+If x = 4 and y = 3 . Then the operation ( x > 3 ) ^ ( y == 6 ) returns TRUE.
+
+If x = 0000 0100 and y = 0000 0101 . Then the operation x XOR y returns 1.
+
+Assign the corresponding symbol to the logical operation.
+Bitwise negation
+!
+Bitwise exclusive or
+^
+Bitwise addition
+||
+Bitwise multiplication
+&&
+
+
+What does the right/left bit shift by n positions correspond to?
+A right bit shift by n positions Division by the power of two = x >> n = x 2 n .
+A left bit shift by n positions Multiplication by the power of two = x << n = x ⋅ 2 n .
+
+For the arithmetic bit shift, the value of the highest, most significant bit is retained, although in the case of logical bit shift the values 0 are put in the border positions, even in the case of the highest, most significant bits.
+
+What will the number 10010111 look like after the arithmetic bit shift by one position to the right?
+11001011
+
+
+What will the number 10010111 look like after the logical bit shift by one position to the right?
+01001011
+
+
+The bit, that is ejected from the value during the shift, is during the rotation inserted again at the opposite end.
+
+What will the number 00010111 look like after the left rotation?
+00101110
+
+What will the number 00010111 look like after the right rotation?
+10001011
+
+What is the algorithm complexity and the complexity of a problem?
+Algorithm complexity
+Estimate of the complexity of a particular algorithm.
+Complexity of a problem
+Complexity of the best algorithm that can be used to solve the problem.
+
+Assign the complexity class to its name.
+P - polynomial
+NP - non-deterministic polynomial
+
+
+If the time complexity of the function f ( N ) is polynomial, we are talking about the polynomial algorithms and problems that are solved using these algorithms are classified in the P (polynomial) complexity class.
+
+
+For every problem there is a polynomial algorithm that solves it.
+No
+
+Which of the following applies to the P versus NP problem?
+P = NP
+P ≠ NP
+
+What are the typical NP-complete tasks?
+knapsack problem
+travelling salesman problem
+partition problem
+
+Which of the following do we consider as an alphabet of a language in IT?
+{a, b}
+{a, 1, b, 0}
+{a, b, c}
+{1, 0}
+
+If the alphabet is {0,1}, then what might the string look like?
+0101110
+
+If the alphabet is {b,a}, then what might the string look like?
+bababbba
+
+Not all strings are generated by some formal grammar.
+no
+
+All strings are accepted by an automaton, for example Turing machine or a finite-state machine.
+
+Languages using the context grammar are recognizable by a linear-bounded non-deterministic Turing machine.
+
+What types of grammars are included in the context types of grammar?
+regular
+context-free
+
+Languages using the context-free grammar are recognizable by a non-deterministic pushdown automaton.
+
+Assign a corresponding grammar to each type.
+Type 0
+All formal grammars (recursively enumerable)
+Type 1
+Context-sensitive grammars
+Type 2
+Context-free grammars
+Type 3
+Regular grammars
+
+
+If the algorithm does not include a terminating condition - base condition, then it is infinite algorithm.
+
+Recursion represents a repeated nested call of the same subroutine (function).
+
+Can every recursion be replaced by an iteration and vice versa?
+yes
+
+Using recursion instead of iteration always leads to a more optimal and faster solution.
+No
+
+Assign the meaning of direct and indirect recursion.
+Indirect recursion
+Recursion, where the function calls another function to make a recursive call.
+Direct recursion
+Recursion, where the function makes a recursive call inside its own function body.
+
+
+
+When two or more programs call each other, what type of recursion is it?
+indirect recursion
+
+
+Assign the meaning to linear and tree recursion.
+Tree recursion
+The subtask (inner function, subroutine) calls itself more than once.
+Linear recursion
+The subtask (inner function, subroutine) calls itself only once.
+
+In what order are the basic steps of the recursive function performed?
+1.
+Check (whether the input parameters correspond to the specified conditions)
+2.
+Initialization (i.e. defining the values used for the start of the calculation)
+3.
+Performing the recursion itself (calling functions that solve the given subproblem, compiling the result)
+4.
+Return of the result
+
+
+For which variant is the factorial of the number solved by recursion?
+function factorial(n) {
+    if (n < 0) return -1
+    if (n == 0 || n == 1) return 1
+    return n * factorial(n - 1)
+}
+
+
+What will the functionality in JavaScript look like using recursion for printing a string backwards?
+ function reverseString(str) {
+  if (str === "")
+    return "";
+  else
+    return reverseString(str.substr(1)) + str.charAt(0);
+}
+
+
+What will the function in JavaScript look like using recursion to verify that it is a palindrome word?
+
+Palindrome - text that reads the same backwards as forwards.
+function palindrome(str) {
+    let cleanStr = clean(str);
+    let strLength = cleanStr.length;
+    
+    if (strLength < 2) {
+        return true;
+    }
+
+    if (cleanStr[0] == cleanStr[strLength - 1]) {
+        return palindrome(cleanStr.slice(1, strLength - 1));
+    }
+
+    return false;
+};
+
+
+Which solution of the Fibonacci sequence is efficient and optimal?
+function fibonacci(n) {
+	  if (n == 0) return 0
+  	if (n == 1) return 1
+  	
+  	let result = 0
+  	let lastNum = 0
+  	let num = 1
+	  for (i = 1; i < n; i++) { 
+	  	result = lastNum + num
+	  	lastNum = num
+	  	num = result
+  	}
+  	
+	  return result
+}
+
+
+Which example is indirect recursion?
+function functionA(n) {
+    if (n < 1) return 1
+    else return 1 + functionB(n)
+}
+
+function functionB(n) {
+    return functionA(n-1)
+}
+
+
+
+How can x n be calculated for n > 0 ?
+function function(x, n) {
+    if (n==0) return 1
+    else return (x * function(x, n-1))
+}
+
+
+A linked list is used for storing data of unknown length.
+
+What are the basic parts of a linked list?
+iterator
+node
+tail
+head
+
+Assign the meaning to the linked list elements.
+iterator
+Variable that maintains the address of the given element.
+node
+Contains data and also may link to other nodes.
+the first node (head)
+The first element of the list.
+the last node (tail)
+Address zero determining the last element of the list
+
+Which picture depicts the circular linked list?
+Je to ten obrázek, kde ocas vede na hlavu
+
+
+We can scroll through the doubly linked list left and right.
+
+
+Which of the following applies to each type of list?
+Singly linked list
+Every node contains a link to the next node in line.
+Circular linked link
+The last element of the list refers to the first element of the same list.
+Doubly linked list
+Every node contains a link to the next and the previous node in line.
+
+
+If we want to remove a list element, which we need to search for first, then the complexity of this operation will be O(n).
+
+
+What operations can be performed on a linked list?
+Removing an element
+Searching for an element
+Random access to an element
+Adding an element
+
+
+The array elements are always indexed from 0.
+no
+
+
+How do we access the individual elements in the array?
+Using index
+
+Array is primarily intended for finite group of elements.
+
+Which of the following can be considered as an array index?
+960
+8
+
+
+Which of the following are examples of a one-dimensional array?
+let bin = [1, 0, 1, 1, 1, 0];
+let abc = [a, b, c, d, e, f];
+
+If we are adding an element to the beginning of an array, then the asymptotic complexity of this operation will be O(1)
+No
+
+
+Assign the asymptotic complexity to every operation.
+Accessing an element O ( 1 )
+Searching for an element in a sorted array O ( l o g n )
+Searching for an element O ( n )
+
+
+What does the shortcut LIFO mean?
+The last element inserted to a stack will be the first element removed from the stack.
+
+What will the result look like after performing a push operation on a stack?
+let stack = [1, 2, 2, 3, 4, 4];
+
+What will the result look like after performing a pop operation on a stack?
+  let stack = [1, 2, null, 3];
+
+
+  What will the result look like after performing the following operations on a stack?
+  let stack = [1, 2, 3, 3, 5];
+
+Which method is represented by the "First come, first served" statement?
+fifo
+
+What will the result look like after performing an enqueue operation on a queue?
+  let queue = [0, 0, 1, 2, 3, 3, 4];
+
+
+What will the result look like after performing a dequeue operation on a queue?
+  let queue = [0, 1, 2, 3, 3];
+
+Set allows duplication just as a linked list and array.
+No
+
+
+Set is a model data structure, which can be implemented using array or linked list.
+
+
+Which of the following applies to a set?
+Does not allow duplication.
+Allows us to store elements without any specific order.
+Can be implemented using array or linked list.
+
+
+
+Assign the correct properties to sets.
+Dynamic sets
+Allow adding another elements.
+Static sets
+Don't allow further addition of elements.
+
+
+A circular buffer is an implementation of queue (FIFO) over array, which is used mostly as a buffer in data streams.
+
+
+What does a circular buffer consist of?
+two pointers
+static array
+
+Assign the correct functionalities to pointers.
+Second pointer (EndPointer)
+Points to the first free index in the array.
+First pointer (StartPointer)
+Points to the first element.
+
+
+The asymptotic complexity of selecting and reading an element on the first index is O (1), the complexity of adding an element to the back of the queue is O (1).
+
+
+
+What happens when a new element is added to the buffer?
+The second pointer (EndPointer) is incremented.
+
+
+
+What happens when the first element of the buffer is removed?
+The first pointer (StartPointer) is incremented.
+
+How do we approach the elements in an associative array?
+Using a key.
+
+Which of the following can be used as a key in an associative array?
+integer
+string (text)
+date
+binary number
+
+
+Which of these options contain a correctly written associative array?
+all of them
+
+
+The asymptotic complexity of adding an element to an associative array is always O (1).
+
+
+Tree that contains only one element is also considered a tree.
+Yes
+
+
+Which picture depicts the leaf node of a tree?
+(Jedná se o obrázek, kde poslední node nemá žádného potomka)
+
+
+What can a tree node contain?
+value
+representation of another inner structure
+condition
+its own tree
+
+
+Which picture depicts the root node of a tree?
+(Je to ten nejvyšší node)
+
+
+Which picture depicts the internal node of a tree?
+(Je to node, který má rodiče i potomka)
+
+
+Assign each node type to its meaning.
+Root
+Highest node of the tree.
+Leaf nodes
+Have parents but no children.
+Internal nodes
+Have parents and at least one child.
+
+
+Assign each type of tree to its description.
+Binary tree
+Every node can have maximum of two children.
+Tree with a similar structure to a linked list
+The number of node children is approaching 1.
+B-tree
+A node can have n children.
+2-3 tree
+Internal nodes have two children and a key, or three children and two keys.
+
+
+
+path length = number of nodes in the way - 1
+
+
+What determines the width of a tree?
+number of nodes in the same level
+
+
+Is this a balanced tree?
+No (A tree is balanced, when the distance between the root and the leaf nodes differs by at most 1.)
+
+N-arity determines the maximum number of children that a node can have.
+
+
+Assign the traversal methods to their functionalities.
+A level-order walk
+Nodes are traversed level by level - the root is visited first, followed by the child nodes and their siblings, then the grandchild nodes, etc..
+A depth first search
+It starts by entering a node and then following the path to the next child on the left, going all the way to the top, which it has not visited yet.
+
+
+Which basic methods do we use for traversing nodes in an ordered tree?
+Preorder
+NLR
+We process the root first, then the left subtree and lastly the right subtree.
+Inorder
+LNR
+We process the left subtree first, then the root and lastly the right subtree.
+Postorder
+LRN
+We process the left subtree first, then the right subtree and lastly the root.
+
+
+All subtrees of a heap are also considered heaps.
+Yes
+
+
+If we index heap elements from 0 then 2 ⋅ i + 1 and 2 ⋅ i + 2 will apply to the children.
+
+If we index heap elements from 1 then 2 ⋅ i and 2 ⋅ i + 1 will apply to the children.
+
+What will the process of adding a new element to the max heap look like?
+1.
+Create a new node at the end of the heap.
+2.
+Assign a value to the node.
+3.
+If the value is less than the value of the parent, end the run.
+4.
+If the value is greater than the value of the parent, switch the nodes.
+5.
+Repeat the steps 3 and 4, untill you meet the basic property of the heap.
+
+
+On which index is the value 7 located, provided that we index from 0 from top to bottom and from left to right.
+2 · 3 = 6
+
+
+What will the heap look like after inserting the value 6?
+876314
+
+
+On which index is the value 9 located, provided that we index from 0 from top to bottom and from left to right.
+2 · 2 + 1 = 5
+
+
+What will the heap look like after deleting the root?
+74631
+
+
+
+
+Sorting algorithm is an algorithm whose task is to ensure the arrangement of the given records (f.e. array, linked list, file) in a desired order.
+
+
+Which part of the record do we use for comparing elements?
+key
+
+It is possible to transform any unstable algorithm into a stable one.
+Yes
+
+
+How do the following types of algorithms work?
+Stable algorithm
+Maintains the order of the records with the same key while working.
+Unstable algorithm
+Switches the order of the records with the same key while working.
+
+
+This is an unstable algorithm, because it switches the order of the records with the same key.
+Unstable
+
+
+Which of these is an example of a stable algorithm?
+INPUT: (Wells, Nada), (Beattie, Blanka), (Beattie, Samiya) //(key, value)
+OUTPUT1: (Beattie, Blanka), (Beattie, Samiya), (Wells, Nada)
+OUTPUT2: (Beattie, Blanka), (Beattie, Samiya), (Wells, Nada)
+
+
+
+Which of these is an example of an unstable algorithm?
+
+Which type of sorting according to the location of the input data do we use, when we dont have enough memory and are not able to store all data records in this memory?
+external sorting
+
+
+What does internal and external sorting mean?
+Internal sorting
+Sorting, where we know the sorted data records beforehand and have enough free memory available.
+External sorting
+Sorting, where we do not know the individual data records beforehand and we gradually read them from the input in the order in which they are in the input.
+
+
+We say that sorting is stable when the elements with the same value are not swapped during sorting.
+
+
+
+According to which criteria can we divide the sorting algorithms.
+Time complexity
+Algorithm stability
+Space complexity
+Sequentiality
+
+
+Which of the following is the animation of merge sort?
+(taková se třema čárama, co se mergujou)
+
+
+
+Partition method works by dividing the input data into parts with records corresponding to a certain criteria, where the division ends in sections with two or one element.
+
+
+natural algorithm is an algorithm, which sorts a sorted or partially sorted sequence faster, as opposed to the non-natural algorithm, which takes longer to process a sorted or partially sorted sequence.
+
+
+
+What are the properties of a selection sort algorithm?
+not natural
+time complexity O(n2)
+slow
+
+
+Selection sort is suitable for sorting small amount of data.
+
+
+What is the main principle of the selection sort algorithm?
+Finding a minimum/maximum, which is then moved to the front/end of the array.
+
+
+The selection sort algorithm is not stable, which means that the order of elements with the same key can be changed and does not belong to the group of natural sorting algorithms (a partially sorted list will be processed just as long as an unsorted list).
+
+
+What does the process of the selection sort algorithm look like?
+1.
+Divide the sequence into a sorted part and an unsorted part.
+2.
+Find an element with the smallest value in the unsorted part of the sequence.
+3.
+Swap the found element with the element in the first position in the unsorted part.
+4.
+Move the first element of the unsorted part to the sorted part and at the same time reduce the unsorted part by one element from the left.
+5.
+Repeat the steps 2 - 5 for the remaining unsorted part.
+
+
+What will the selection sort algorithm applied to the array of numbers: [5, 3, 6, 2, 1, 4] look like?
+1.
+[1, 5, 3, 6, 2, 4]
+2.
+[1, 2, 5, 3, 6, 4]
+3.
+[1, 2, 3, 5, 6, 4]
+4.
+[1, 2, 3, 4, 5, 6]
+
+
+
+Which pseudocode is the pseudocode of the selection sort algorithm?
+function selectionSort(array, opt="asc") {
+  compare = (opt === "asc") ? compareAsc : compareDesc;
+
+  for (let i = 0; i < array.length - 1; i++) {
+    let searchIndex = i;
+
+    for (let j = i + 1; j < array.length; j++) {
+      if (compare(array[j],array[searchIndex])) { 
+        searchIndex = j;
+      }
+    }
+
+    let item = array[i];
+    array[i] = array[searchIndex];
+    array[searchIndex] = item;
+  }
+}
+
+Které vlastnosti pro algoritmus insertion sort platí?
+je přirozený
+je stabilní
+časová složitost O(n2)
+
+
+selection sort
+Má časovou složitost O(n2); není stabilní; není přirozený.
+insertion sort 
+Má časovou složitost O(n^2); je stabilní; je přirozený.
+
+
+V čem spočívá základní myšlenka algoritmu insertion sort?
+Každý nezařazený prvek algoritmus zařadí na správné místo do již seřazené posloupnosti.
+
+Jak vypadá průběh algoritmu insertion sort?
+1.
+Rozdělit posloupnost na seřazenou a neseřazenou tak, že seřazená obsahuje první prvek posloupnosti.
+2.
+Z neseřazené části vybrat první prvek a zařadit jej na správné místo v seřazené posloupnosti.
+3.
+Prvky v seřazené posloupnosti posunout o jednu pozici doprava.
+4.
+Seřazenou část zvětšit o jeden prvek. Naopak neseřazenou část o jeden prvek zleva zmenšit.
+5.
+Kroky 2–5 opakovat až do úplného seřazení neseřazené části.
+
+
+Jak bude vypadat průběh ražení algoritmem insertion sort pole čísel: [5, 3, 1, 2, 6, 4]
+1.
+[3, 5, 1, 2, 6, 4]
+2.
+[1, 3, 5, 2, 6, 4]
+3.
+[1, 2, 3, 5, 6, 4]
+4.
+[1, 2, 3, 4, 5, 6]
+
+
+
+Který z kódů je kódem algoritmu insertion sort?
+function insertionSortAscending(array) {
+  for (let i = 0; i < array.length; i++) {
+    let j = i - 1;
+    let item = array[i];
+    while (j >= 0 && item < array[j]) {
+      array[j + 1] = array[j];
+      j--;
+    }
+    array[j + 1] = item;
+  }
+}
+
+
+
+
+Jak bude vypadat průběh ražení algoritmem insertion sort pole čísel: [51, 43, 26, 32, 15, 62]
+1.
+[43, 51, 26, 32, 15, 62]
+2.
+[26, 43, 51, 32, 15, 62]
+3.
+[26, 32, 43, 51, 15, 62]
+4.
+[15, 26, 32, 43, 51, 62]
+
+
+
+Které vlastnosti platí pro algoritmus bubble sort?
+Není efektivní.
+Nevyžaduje další paměť.
+Je přirozený.
+Je stabilní.
+
+
+V čem spočívá základní myšlenka algoritmu bubble sort?
+Každé dva sousední prvky se prohodí, nejsou-li ve správném pořadí.
+
+
+Jak bude vypadat průběh ražení algoritmem bubble sort pole čísel: [5, 3, 6, 4]
+1.
+[3, 5, 6, 4]
+2.
+[3, 5, 4, 6]
+3.
+[3, 4, 5, 6]
+
+
+Který z pkódů je kódem algoritmu bubble sort?
+function bubbleSortAscending(array) {
+  for (let i = 0; i < array.length - 1; i++) {
+    for (let j = 0; j < array.length - i - 1; j++) {
+      if(array[j] > array[j+1]) {
+        let item = array[j];
+        array[j] = array[j+1];
+        array[j+1] = item;
+      }
+    }
+  }
+} 
+
+
+Jak bude vypadat průběh ražení algoritmem bubble sort pole písmen: [c, a, e, b, d]
+1.
+[a, c, e, b, d]
+2.
+[a, c, b, e, d]
+3.
+[a, c, b, d, e]
+4.
+[a, b, c, d, e]
+
+
+Které vlastnosti pro algoritmus merge sort platí?
+Je přirozený.
+Je stabilní.
+Vyžaduje další paměť.
+
+
+Merge sort je algoritmus, založený na principu rozděl a panuj.
+
+
+Při implementaci merge sortu je vhodné použit rekurzi.
+
+
+Který z kódů je kódem algoritmu merge sort?
+mergeSort (array) {
+    if (array.length <= 1) {
+      return array;
+    }
+
+    let middle = Math.floor(array.length / 2);
+
+    let left = array.slice(0, middle);
+    let right = array.slice(middle);
+
+    return this.merge(this.mergeSort(left), this.mergeSort(right));
+  }
+
+  merge (left, right) {
+    let resultArray = [];
+    let leftIndex = 0;
+    let rightIndex = 0;
+
+    while (leftIndex < left.length && rightIndex < right.length) {
+      if (left[leftIndex] < right[rightIndex]) {
+        resultArray.push(left[leftIndex]);
+        leftIndex++;
+      } else {
+        resultArray.push(right[rightIndex]);
+  			rightIndex++;
+      }
+    }
+
+    return resultArray.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+  }
+
+}
+
+Provedením vylepšení merge sortu se dá dodatečné paměti zbavit.
+ne
+
+Které vlastnosti pro algoritmus quicksort platí?
+Je přirozený.
+Je velmi rychlý.
+Časová složitost je O ( n l o g n ) v nejhorším případě O ( n 2 ) .
+
+
+Který prvek se nazýva pivotem?
+Jeden z prvků řazené posloupnosti.
+
+
+Za ideálně zvoleného pivota se považuje medián řazené posloupnosti.
+
+
+
+Který z kódů je kódem algoritmu quicksort?
+quickSort(array, left, right) {
+    if (left < right) { 
+      let boundary = left;
+      for(let i = left + 1; i < right; i++) { 
+        if(array[i] < array[left]) {
+          boundary = boundary + 1;
+          this.swap(array, i, boundary);
+        }
+      }
+      this.swap(array, left, boundary);
+      this.quickSort(array, left, boundary);
+      this.quickSort(array, boundary + 1, right);
+    }     
+}
+    
+
+
+K čemu všemu může sloužit použití rekurze při implementaci quicksortu?
+K lineárnímu růstů spotřeby paměti.
+K pádu aplikace z důvodu vyčerpání paměti.
+
+
+
+Máme neseřazené pole: [86, 84, 37, 56, 79, 90, 31, 86, 43, 4], který prvek bude pivotem, pokud budeme volit metodou mediánu?
+90
+
+
+
+Který algoritmus má vždycky časovou složitost O ( n l o g n ) ?
+merge sort
+
+
+
+Které vlastnosti platí pro algoritmus heapsort?
+Není stabilní.
+Není přirozený.
+Má konstantní paměťovou náročnost.
+
+
+Základem řadícího algoritmu heapsort je datová struktura halda.
+
+
+Které z následujících vlastností platí pro haldu?
+Poslední "patro" haldy je zaplněno zleva.
+Každý vnitřní vrchol má právě 2 syny.
+Strom je velmi vyvážený.
+
+
+Jak vypadá průběh algoritmu heapsort?
+1.
+Postavíme max nebo min heap.
+2.
+Utrhneme vrchol haldy a prohodíme utržený prvek s posledním prvkem haldy.
+3.
+zmenšíme haldu o 1.
+4.
+Vrátíme se do kroku číslo 2, pokud jsou v haldě prvky.
+5.
+Pole je seřazené v opačném pořadí, než je priorita prvků.

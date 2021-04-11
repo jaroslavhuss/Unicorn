@@ -1,0 +1,1155 @@
+Co všechno z následujícího můžeme zařadit do IT?
+server
+rádio
+Skype
+bankomat
+
+Lze za běžných okolností považovat pojmy IT a ICT za v podstatě totožné?
+Ano
+
+Odborně se pohledu na IT přes funkčnosti říká Use-Case Driven Approach.
+
+Jak se říká sadě kroků, která obvykle definuje interakci mezi tzv. uživatelem a systémem?
+Use-Case
+
+Klíčovým úkolem IT je poskytovat svým uživatelům funkčnosti.
+
+Simulujte jednoduchou interakci s bankomatem. Ve které posloupnosti se budou vykonávat jednotlivé kroky?
+vložit kartu zadat PIN vybrat hotovost bankomat vydá kartu
+
+IT Označuje v dnešní době výrazně populární a rychle se rozvíjející obor informační technologie.
+Use-Case Driven Approach - Pohled na IT přes funkčnosti.
+
+Případ užití (Use-Case) - Seznam kroků, který obvykle definuje interakci mezi tzv. uživatelem a systémem.
+
+Mohou být uživateli funkčnosti kromě člověka i jiné systémy?
+Ano
+
+Funkčnosti, které uživatelé používají, jsou složené z produktů a služeb.
+
+Co z uvedeného patří do P&S (angl. Products and Services) portfolia?
+datová úložiště
+internet věcí
+mobilní telefony
+informační bezpečnost
+
+Co nebo kdo bývají zejména nositeli IT funkčnosti?
+informační systémy resp. aplikace
+
+Které uživatele IT funkčnosti rozlišujeme?
+automat (Automat)
+člověk (Person)
+chytrá krabička internetu věcí (IoT Smart Box)
+umělá inteligence (Artificial Intelligence)
+
+umělá inteligence (Artificial Intelligence) - Stroj nebo systém, schopný vykonávat úkoly obvykle vyžadující lidskou inteligenci, jako je vizuální vnímání, rozpoznávání řeči, rozhodování a překlad mezi jazyky.
+automat - Technické zařízení pracující po zapnutí samočinně bez lidské obsluhy.
+chytrá krabička internetu věcí (IoT Smart Box) - sTechnické zařízení, na které můžeme napojit jiná IT zařízení a jednoduše je ovládat přes jednotné rozhraní.
+
+Jak jde podle logické návaznosti za sebou prvních 5 z 7+1 úskalí uživatele?
+1.
+Je to špatně vymyšleno.
+2.
+Je to špatně navrženo.
+3.
+Je to špatně naprogramováno.
+4.
+Je to špatně nasazeno.
+5.
+Je to špatně provozováno.
+
+Pokud nefunguje internetové připojení, o které ze 7+1 úskalí uživatele se jedná? 
+Nefunguje infrastruktura.
+
+7+1 úskalí uživatele nám určuje příčiny toho, že IT funkčnosti nefungují tak, jak si uživatel představuje.
+
+Vždy existuje právě jedna příčina toho, že IT funkčnosti nefungují tak, jak si uživatel představuje.
+Ne
+
+Pokud dochází k zahlcování a zpomalování systému z důvodu dlouhodobého ukládání logů, o které ze 7+1 úskalí uživatele se jedná?
+Je to špatně provozováno.
+
+Proč je vhodné podnikové IT dekomponovat?
+Dekompozice pomáhá lepšímu určení kompetencí.
+Aby bylo předem jasné, za jakým účelem a jak se bude postupovat.
+
+
+IT strategie je sada klíčových rozhodnutí, která se týká používání a organizace IT ve firmě.
+
+
+Které informace můžeme najít v IT strategii?
+rozhodnutí o interním vs. outsorcovaném vývoji
+katalog preferovaných technologií
+preferované dodavatele
+
+
+Má IT strategie fyzickou podobu?
+Ano
+
+
+Co všechno patří do IT management & support?
+pracovní prostředí
+lidé
+
+
+
+Role IT manager má v kompetenci IT management & support.
+
+
+
+Většinou je nezbytné rozdělit funkcionalitu IT do logických skupin případů užití. Těmito skupinami jsou právě informační systémy nebo subsystémy.
+
+
+
+Co všechno patří do IT infrastruktury?
+servery
+koncová zařízení
+sítě
+
+
+
+IT strategie
+Dokument nebo sada dokumentů, kde jsou určena základní pravidla a kritéria, v rámci kterých se IT v podniku chová.
+IT management & support
+Řídí a podporuje zajištění dlouhodobého, efektivního a kvalitního fungování informačních systémů a IT infrastruktury.
+Informační systémy
+Reprezentují funkcionalitu IT v podniku a prostřednictvím svých jednotlivých případů užití jsou rozhraním (interface) pro uživatele.
+IT infrastruktura
+Logická a fyzická strukturovaná soustava činností a komponent, které mohou být univerzálně využívány informačními systémy.
+
+
+
+Pro fungování každého informačního systému je třeba zajistit 5 procesů.
+
+
+
+
+Veškeré IT v podniku je v ekonomickém smyslu kapitál.
+
+
+
+Kapitál je soubor hmotných a nehmotných složek podnikání.
+
+
+
+Co považujeme za hmotné a nehmotné složky podnikání?
+nehmotné složky podnikaní - SW, data, know-how,...
+hmotné složky podnikaní - servery, stanice, telefony,...
+
+
+
+Co lze říci o dobré investici?
+Snižuje pravděpodobnost a dopad rizika.
+Zvyšuje rentabilitu kapitálu.
+
+
+
+podnik
+Soubor hmotných, osobních a nehmotných složek podnikání.
+kapitál
+Prostředky (finance, stroje, know-how,...), které majitelé do podniku vložili.
+investice
+Vklad prostředků do podniku, od kterého očekává majitel zvýšení celkových výnosů z podniku.
+
+
+
+Náklady spojené s používáním jsou obtížně kvantifikovatelné.
+
+
+
+Náklady na vlastnictví se skládají z nákladů na pořízení a nákladů na provoz. - ANO
+
+
+
+
+Čím jsou charakteristické následující přínosy a náklady na IT?
+kvantifikovatelné přínosy
+Zvýšení produktivity nebo počtu vyrobených produktů.
+ostatní přínosy
+Podnik nahradí stávající zastaralý systém modernějším, se kterým budou zaměstnanci pracovat lépe a radostněji.
+náklady spojené s používáním
+Cena času, kterou uživatelé potřebují na zpracování své části business procesu.
+náklady na vlastnictví
+Cena za pořízení, respektive financování projektu.
+
+
+
+Jak jdou logicky za sebou fáze životního cyklu Business Case?
+vytvoření
+aktualizace
+vyhodnocení
+
+
+
+Na základě Business Case se management rozhoduje, zda je daná investice v porovnání s ostatními investicemi vhodná k uskutečnění.
+ANO
+
+
+
+
+Kvantitativní techniky
+Pracují s přesnými čísly.
+Kvalitativní techniky
+Jsou multikriteriální.
+
+
+
+TCO = Náklady na investici + Náklady na provoz
+
+
+
+
+Základní myšlenkou ukazatele EVA je, že investovaný kapitál musí mít větší přínos a náklady na něj musejí být menší.
+
+
+
+Doba návratnosti udává počet let, za kolik se vrátí vynaložené náklady.
+
+
+
+Celkové náklady spojené s vlastnictvím - TCO = Náklady na investici + náklady na provoz
+Ekonomická přidaná hodnota = EVA = Cisty zisk - TCO * Náklady kapitálu
+Doba Návratnosti = TS = Jednorazove investicni naklady / Rocni vynosy
+
+
+ROI = Čistý zisk / TCO
+
+
+NPV představuje komplexní metodu, která bere v úvahu cenu peněz v čase, závisí pouze na předvídaných hotovostních tocích a alternativních nákladech kapitálu.
+
+
+
+IRR udává rentabilitu, kterou projekt během svého životního cyklu poskytuje.
+
+
+
+Rentabilita Investice = ROI = Prinosy - TCO / TCO = Cisty Zisk / TCO
+Čistá současná hodnota = NPV = Cash FLow Diskontace - Investicni Naklady
+Vnitřní výnosové procento  = 0 = Suma Tn = 0, CFn/(1+r)^n - IN
+
+
+
+
+BSC je systém řízení a měření výkonnosti organizace, jehož základem je stanovení vyváženého systému vzájemně provázaných ukazatelů výkonnosti podniku.
+
+
+
+
+Ze kterých portfolií se skládá hodnotící technika IT portfolio management?
+portfolio aplikací/systémů
+portfolio zdrojů
+portfolio projektů
+
+
+Které z uvedených technik hodnocení investic jsou kvalitativní?
+IT Balanced scorecard (BSC)
+IT Portfolio management
+
+
+Pokud víme, že náklady na investici činí 4,5 mil. Kč a náklady na provoz 6 mil. Kč, tak kolik potom činí celkové náklady spojené s vlastnictvím (TCO)?
+TCO = 10,5mld (sčítá se to)
+
+
+Vrátí se nám vynaložená investice pokud víme, že čistý zisk činí 5 mil. Kč, TCO je 3 mil. Kč a náklady kapitálu jsou 1 mil. Kč?
+Ano
+
+Za jak dlouho se nám přibližně investice zaplatí pokud víme, že jednorázové investiční náklady činí 4 mil. Kč, roční výnos 2,4 mil. Kč a roční náklady 1 mil. Kč?
+3 roky
+
+
+Pokud víme, že čistý zisk je 3,4 mil. Kč a TCO 6,1 mil. Kč, rentabilita investice (ROI) se potom rovná přibližně 0,6.
+0,6
+
+
+
+
+Víme, že čistý zisk podniku se rovná 2,1 mil. Kč, celkové náklady spojené s vlastnictvím 5,2 mil. Kč. Dále víme, že majitel měl možnost alternativní investice s výnosem 15 %.
+Kolik činí ekonomická přidaná hodnota?
+přibližně -3,9
+
+
+
+
+Pokud přínosy firmy činí 6,7 mil. Kč a celkové náklady spojené s vlastnictvím jsou 3,4 mil. Kč, pak se rentabilita investice (ROI) rovná přibližně 1.
+1
+
+
+Vrátí se nám vynaložená investice pokud víme, že čistý zisk činí 10,6 mil. Kč, TCO je 2,3 mil. Kč a náklady kapitálu jsou 3,2 mil. Kč?
+Ano
+
+
+
+Která z variant (A nebo B) uvedených v tabulce má kratší dobu splatnosti investice?
+Varianta A
+
+
+
+
+Každý informační systém musí být hlavně funkční.
+
+
+
+Dobrý informační systém musí splňovat 10+1 vlastností.
+ - ANO
+
+
+
+Kterou z 10+1 vlastností dobrého systému splňuje systém, který dostatečně rychle zajistí požadované úlohy pro celou předem definovanou cílovou skupinu?
+Výkonný
+
+
+
+Za ergonomický IS se považuje systém, který je uživatelsky přívětivý.
+
+
+
+Pokud náklady na informační systém převyšují cenu za jeho používání, o jaký informační systém se jedná?
+neekonomický
+
+
+
+Informační systémy reprezentují funkčnost IT v podniku a prostřednictvím svých jednotlivých případů užití jsou rozhraním pro uživatele.
+
+
+
+
+Které vlastnosti by měl mít dobrý informační systém?
+bezpečnost
+výkonnost
+stabilita
+
+
+
+
+
+Informační technologie
+Znalost programovacích jazyků, knihoven ale také HW prvků.
+Proces
+Porozumění standardizovanému postupu (metodiky) vývoje SW.
+Business
+Porozumění konkretní problematice (pojišťovnictví, bankovnictví, zdravotnictví, ...).
+
+
+
+
+
++1 typ znalosti nezbytný pro vývoj IS říká, že je potřeba mít znalost světových jazyků.
+
+
+
+On-premise představuje zajištění provozu IS výhradně vlastními prostředky.
+
+
+
+Cloud Computing představuje pronájem zdrojů od příslušného poskytovatele (tj. třetí strany), který služby provozuje na své infrastruktuře.
+
+
+
+Co všechno patří do výhod Cloud Computingu?
+Nízké investiční náklady.
+Dynamická škálovatelnost služeb.
+Nezávislost na místě, čase a platformě.
+
+
+
+
+Hlavní odlišnosti mezi On-premise a Cloud Computingem jsou obchodní model a škálovatelnost.
+
+
+
+Cloud Computing
+Poskytování služeb či programů servery dostupnými z internetu s tím, že uživatelé k nim mohou přistupovat vzdáleně.
+On-premise
+Tradiční forma provozu, kde je software nainstalován lokálně na podnikových serverech a počítačích.
+
+
+
+
+Cloud Computing oproti On-premise je obvykle levnější řešení.
+
+
+
+SaaS
+Pronájem IS a aplikací, které jsou provozovány na hardwarovém a softwarovém vybavení poskytovatele.
+IaaS
+Pronájem IT infrastruktury, serverů, datových úložišť apod.
+PaaS
+Poskytování prostředků pro vývoj a údržbu vlastních IS a aplikací dostupných prostřednictvím internetu.
+
+
+
+
+Gmail je online e-mailový servis, který je představitelem SaaS služby.
+
+
+
+SaaS
+aplikace
+IaaS
+infrastruktura, server
+PaaS
+vývojová platforma
+
+
+
+
+Které služby nejsou představiteli SaaS?
+Microsoft Azure
+Amazon Web Services (AWS)
+
+
+Cloud Computing představuje primárně alternativu k jinak tradičnímu vlastnictví IT. Službu si pronajímáme od třetích stran.
+
+
+Při které formě provozu nemusíme ve firmě mít IT oddělení?
+Cloud Computing
+
+
+
+IT startup, který má omezený startovací kapitál a potřebuje si zprovoznit svůj vlastní IS. Tato firma si pronajímá malou kancelář v centru Prahy ve staré budově.
+Kterou formu provozu by bylo lepší, aby si startup firma zvolila?
+Cloud Computing
+
+
+
+IT firma, která má svůj vlastní IS s už vytvořenou infrastrukturou a také oddělením, které se o něj stará, potřebuje nasadit další IS, který má mít svoji vlastní infrastrukturu.
+Může si v tomto případě IT firma pořídit IaaS?
+Ano
+
+
+
+Orgán statní správy potřebuje nasadit svůj IS do provozu. Tento orgán je právně omezen a potřebuje, aby byla veškerá data pod přímým dohledem a na území České republiky.
+Kterou formu provozu by si orgán státní správy měl zvolit?
+On-Premise
+
+
+Může si orgán státní správy (pokud není nějak právně vázán) zvolit cloud řešení?
+Ano
+
+
+
+Účetní firma, která zpracovává velké množství faktur denně, si pořídí SaaS pro zpracování faktur.
+
+
+
+Je přechod IT firmy s vlastním IS ve vlastní infrastruktuře ke cloudově formě provozu vždy bez rizika?
+Ne
+
+
+
+Co často bývá předmětem konzultací?
+návrhy a optimalizace procesů zákazníka
+
+
+
+Co z následujícího může být předmětem integrace?
+dílčí etapa realizace informačního systému
+celkové IT prostředí
+jednotlivé informační systémy
+
+
+
+Vstupem vývoje je IT zadání a investice klienta a výstupem funkční systém.
+
+
+
+Cílem čeho je zajistit provoz informačních systémů, dohled a správu IT infrastruktury, pravidelný monitoring i provádění preventivních kontrol?
+Cílem provozu
+
+
+
+provoz
+Bezproblémový provoz ICT.
+vývoj
+Dodávka informačního systému, který splňuje požadavky zadavatele.
+integrace
+Zajistit klientovi řešení jeho business požadavků ze strany IT.
+konzultace
+Komplexní nastavení IT prostředí.
+
+
+
+
+Řešení známých problémů včetně náhradních řešení poskytuje primární podpora, kdežto problémy, které z důvodu náročnosti nejsou řešeny, má na starosti sekundární podpora.
+
+
+
+Za co zodpovídá IT infrastruktura?
+bezpečný provoz
+rychlé nasazení
+optimální nastavení
+
+
+
+Vzdělávání se zabývá poskytováním standardizovaných katalogových školení, online kurzů či kurzů na zakázku.
+
+
+
+
+primární podpora
+Řešení známých problémů.
+sekundární podpora
+Kromě řešení nestandardních úloh řeší drobné změny a úpravy, které nemají vliv na základní architekturu IT řešení.
+vzdělávání
+Poskytování standardizovaných katalogových školení a kurzů na zakázku.
+infrastruktura
+Komplexní dodávky síťové a komunikační infrastruktury.
+
+
+Prostřednictvím Team Leasingu lze velice dobře řešit výkyvy v potřebném objemu prováděných prací nebo dynamicky měnit potřebné specializace v týmu.
+
+
+
+
+Co vše poskytuje Team Leasing?
+know-how
+lidi
+
+
+
+
+Při které formě dodávky dodavatel přebírá veškerá rizika softwarového vývoje, a výrazně tak snižuje rizika odběratele, avšak je neeliminuje?
+dodávka řešení
+
+
+
+
+Co vše poskytuje dodávka komplexního řešení?
+know-how
+služby
+komplexní řešení
+komponenty
+
+
+
+Při formě dodávky SaaS zůstává vlastníkem finálního produktu dodavatel.
+Ano
+
+
+
+Co vše poskytuje Software as a Service?
+služby
+komplexní řešení
+
+
+
+
+Team Leasing
+Kompletně sestavený týmu IT profesionálů pro daný projekt.
+dodávka řešení
+Komplexní řešení realizované v definované kvalitě, rozsahu, termínu a za stanovenou cenu, to vše při poskytnutí požadované součinnosti klienta.
+Software as a Service
+IT funkcionalita bez přímé investice do infrastruktury nebo vývoje.
+
+
+
+
+Typový IS představuje standardizované řešení pro konkrétní business doménu, případně pro problém, který chceme automatizovat.
+
+
+
+
+zakázkový vývoj
+Tradiční systém vyvinutý na mírů podle požadavku zákazníka.
+typový informační systém
+Informační systém, který poskytuje své funkčnosti, které je možné v omezené míře přizpůsobit potřebám zákazníka.
+
+
+
+Co je hlavním účelem CRM systému?
+řízení vztahu se zákazníky
+
+
+
+
+Které CRM rozlišujeme?
+operační CRM
+analytické CRM
+kooperační CRM
+
+
+
+Co musí umět každý CRM systém?
+nastavení komunikačního kanálu
+komunikovat s CCD databázi
+
+
+operační CRM
+Podpora práce obchodníka, marketingu a zákaznických služeb.
+kooperační CRM
+Optimalizace komunikace se zákazníkem, vícekanálová komunikace.
+analytické CRM
+Segmentace zákazníků, analýza marketingových kampaní, predikce chování zákazníků.
+
+
+
+
+Cílem kooperačních CRM je sdílení informací získaných ze všech oddělení pro zvýšení kvality poskytovaných služeb zákazníkům.
+
+
+
+
+Ve kterých oblastech se používají CRM systémy?
+v call centrech
+v oblasti prodeje a marketingu
+v contact centrech
+
+
+
+Které z následujících produktů patří mezi nejznámější CRM systémy na trhu?
+Oracle Siebel
+Dynamics 365
+Salesforce
+SAP Hybris
+
+
+
+Co je hlavním účelem ERP systému?
+podnikové plánování zdrojů
+
+
+
+Pro koho jsou ERP systémy určené?
+pro nižší management
+pro střední management
+pro zaměstnance v jednotlivých odděleních
+
+
+
+
+ERP systémy nahrazují více menších systémů v podniku.
+ANO
+
+
+ERP systémy vyřešily mimo jiné problém redundance dat.
+
+
+
+CRM systém může být integrovaný v ERP systému.
+Ano
+
+
+
+Které moduly může mít ERP systém?
+projektový management
+CRM
+personalistika
+finance a účetnictví
+
+
+
+
+Které z následujících produktů patří mezi nejznámější ERP systémy na trhu?
+Dynamics 365
+Oracle ERP
+SAP ERP
+
+
+BI systémy umožňují analýzu celopodnikových dat a plánování většiny oblastí podnikového řízení.
+
+
+
+
+Pro koho je BI určeno?
+analytiky v podniku
+top management
+
+
+
+Co znamená zkratka ETL?
+Extract, Transform, Loading
+
+
+
+Může proces ETL probíhat neustále?
+ne
+
+
+
+
+Jak podle logické návaznosti probíhá proces ETL?
+1.
+získání relevantních dat z transakčních systémů
+2.
+provedení jejich transformace do vhodné podoby
+3.
+sjednocení formátu z různých systémů
+4.
+provedení příslušné agregace
+5.
+uložení do datového skladu nebo multidimenzionální databáze
+
+
+
+OLAP je informační technologie založená především na koncepci multidimenzionálních databází.
+
+
+
+Co patří mezi nevýhody multidimenzionálních databází?
+vyšší cena
+náročnější údržba
+větší nároky na výkon počítače
+
+
+
+Které jsou nejznámější produkty BI (Business Intelligence) na trhu?
+SAP BusinessObjects
+Power BI
+
+
+
+e-Commerce je jinými slovy obecné označení pro všechny formy elektronického podnikání.
+
+
+
+e-Commerce zahrnuje dvě dílčí součásti: elektronický marketing (e-Marketing) a elektronický nákup (e-Purchasing).
+
+
+
+Které typy subjektů v e-Commerce rozlišujeme?
+koncový zákazník, spotřebitel ("C" consumer)
+státní správa, veřejná správa ("G" government)
+podniky, firmy ("B" business)
+
+
+Které typy obchodních vztahů v e-Commerce rozlišujeme?
+B2C
+B2B
+C2C
+B2G
+
+
+Elektronické tržiště (e-Marketplace) je typ vztahu B2B.
+
+
+
+
+Může být e-Commerce řešení integrováno s ERP systémem?
+Ano
+
+
+
+Které výhody přináší e-Commerce?
+snížení nákladů na marketing
+možnost využití více komunikačních kanálů
+snížení nákladů na prodej
+
+
+
+Které jsou nejznámější e-Commerce platformy na trhu?
+Magento
+Amazon E-Commerce platform
+SuiteCommerce
+
+
+
+Co je hlavním cílem portálových řešení?
+integrace ostatních systémů
+
+
+
+Které části podle cílové skupiny uživatelů mají portály?
+extranet
+internet
+intranet
+
+
+
+Extranet znamená, že informace a služby jsou určené pro registrované partnery.
+
+
+
+
+Které cílové skupiny mají jednotlivé části portálu?
+intranet
+interní informace a služby pro zaměstnance
+extranet
+informace a služby pro registrované partnery
+internet
+informace a služby pro veřejnost
+
+
+
+
+Které jsou nejznámější portálové produkty na trhu?
+Liferay portal
+IBM Web Content Manager
+SharePoint
+
+
+
+Automatizace interních procesů (business procesů), které produkují tisíce různých dokumentů a nahrazení papírových dokumentů elektronickými.
+Systémy, které jsou k tomu určeny, označujeme jako Document Management Systems (DMS).
+
+
+
+Které aplikace známe pod označením redakční systémy?
+CMS
+
+
+
+
+Umožňují ECM systémy také správu dokumentů a jejich obsahů?
+ANO
+
+
+
+
+Přiřaď správný význam jednotlivým zkratkám.
+CMS
+používají se v oblasti publikování webového obsahu.
+ECM
+používají se pro správu podnikového obsahu.
+DMS
+umožňují vytváření, komunikaci, ověřování a zasílání dokumentů na správná místa.
+
+
+
+Oborová řešení představují celou řadu dalších informačních systémů, které jsou již specifické pro určitou sféru, resp. obor podnikání.
+
+
+
+
+Kterými oblastmi se může zabývat IS ve sféře bankovnictví?
+rizika a scoring
+mezinárodní platby
+půjčky a hypotéky
+
+
+
+Ve kterých sférách, resp. oblastech podnikání se vyskytují informační systémy pro oborová řešení?
+maloobchod
+finančnictví
+bankovnictví
+pojišťovnictví
+
+
+
+
+Kterými oblastmi se může zabývat IS ve sféře pojišťovnictví?
+produkční systémy
+analytické a statistické nástroje
+rizika a scoring
+
+
+
+
+bankovnictví
+mezinárodní platby, investice a správa portfolia, půjčky a hypotéky,...
+pojišťovnictví
+analytické a statistické nástroje, správa kontraktů, rizika a scoring,...
+finančnictví
+leasing, makléřské firmy, stavební spořitelny,...
+průmysl
+produkční systémy, řízení výroby, řízení kvality,...
+doprava
+řízení provozu, údržba vozidel, řízení a údržba infrastruktury,...
+
+
+
+
+Integrace je kontinuální proces.
+
+
+
+Dobře zvolený mechanismus fungování integrace eliminuje rizika.
+Ano
+
+
+
+Ve kterých z následujících oblastí může probíhat proces integrace?
+
+
+
+Ve kterých z následujících oblastí může probíhat proces integrace?
+řízení a kontrola kvality
+business zadání
+projektové řízení
+architektura řešení
+
+
+
+Integrace hraje klíčovou roli při shromažďování a analýze požadavků zadavatelů na IT řešení a také při stanovení rozpočtu.
+
+
+
+
+
+S ohledem na které faktory musí byt stanovena systémová architektura?
+integrace s okolními IS
+dotčené procesy
+použité IT technologie
+
+
+Které dokumenty je potřeba spravovat a aktualizovat při integraci v oblasti projektového řízení?
+
+
+
+
+Které dokumenty je potřeba spravovat a aktualizovat při integraci v oblasti projektového řízení?
+pravidelný reporting
+plán KKTR (kvalita, kvantita, termín, rozpočet)
+seznam rizik
+portály pro sdílení informací
+
+
+
+Integrace v oblasti kompetence řízení kvality dohlíží na kvalitu jednotlivých výstupů ve smyslu jejich věcné a formální správnosti.
+
+
+
+
+Co je obsahem zadání IS?
+rozpočet
+popis rozsahu funkčností
+termíny dodání
+
+
+
+Realizaci IS dělíme na dvě základní části: projekce a implementace.
+
+
+
+
+implementace
+Probíhá vlastní realizace IS a zavedení IS do provozu, a to vše dle technického projektu.
+projekce
+Vytvoření detailní specifikace požadovaných funkčností IS a stanovení způsobu jejich realizace.
+
+
+
+
+Co je potřeba zajistit v rámci fáze úvodní studie?
+Určit požadavky zainteresovaných stran.
+Stanovit harmonogram projektu.
+Stanovit cíle projektu.
+
+
+
+Technický projekt představuje detailní funkční a technický návrh implementace IS a navazuje na fázi úvodní studie.
+
+
+
+
+
+Co všechno najdeme v technickém projektu?
+popis business procesu
+prototyp
+infrastrukturu řešení
+strategii provozu a podpory
+
+
+
+
+Co je cílem konstrukční fáze vývoje?
+vytvoření informačního systému
+otestování informačního systému
+
+
+
+
+Seřaďte jednotlivé fáze vývoje dle logické návaznosti.
+úvodní studie
+technický projekt
+konstrukce
+zavedení
+
+
+Jak se nazývá fáze vývoje, kdy je informační systém nasazen do produkčního prostředí a spuštěn pilotní provoz?
+zavedení
+
+
+
+Dohromady všechny čtyři fáze vývoje tvoří jednu etapu realizace IS.
+
+
+
+Jednotlivé etapy vývoje typicky trvají 1 rok a déle.
+Ne
+
+
+
+
+Proč je vhodné vývoj rozsáhlého projektu rozdělit do jednotlivých etap?
+Etapy vývoje mohou probíhat paralelně.
+Sniží to rizika.
+
+
+Cílem provozu je poskytování všech potřebných zdrojů a činností nezbytných pro bezproblémový provoz IS a IT infrastruktury.
+Ano
+
+
+
+
+O co se provozní tým musí starat v rámci IT infrastruktury?
+o monitoring
+o správu databází
+o správu uživatelů
+o bezpečnost
+
+
+
+
+Kterými způsoby může provozní tým vykonávat potřebné činnosti?
+on-site
+prostřednictvím vzdálené správy
+
+
+
+Service Level Agreement (SLA) jsou parametry definující rozsah a úroveň služeb, které obsahuje smlouva o zajištění provozu.
+
+
+
+
+Co patří mezí klíčové parametry SLA?
+základní doba služeb
+lhůty plnění
+dostupnost
+
+
+
+Provozní zpráva
+je hlavním podkladem pro hodnocení kvality služby.
+Provozní dokumentace
+udržuje potřebné know-how a také vlastní průběh služby.
+
+
+
+Co z následujícího můžeme outsourcovat?
+infrastrukturu
+prostory
+lidi
+služby
+
+
+
+Úrověň kvality služeb outsourcingu je definována parametry SLA.
+
+
+
+
+
+Které výhody přináší outsourcing?
+přenesení odpovědnosti na externí subjekt
+snížení nákladů
+
+
+
+
+Primární podpora je zodpovědná za poskytnutí podpory uživatelům IS a odstranění nahlášených problémů, u kterých je známý způsob jejich řešení. Služba primární podpory je poskytována na základě SLA parametrů.
+
+
+
+
+Co je klíčovým výstupem primární podpory uživatelům?
+servisní zpráva
+
+
+
+
+Prostřednictvím kterých kanálů můžeme nahlásit problém primární podpoře?
+helpdesk
+telefon
+web
+e-mail
+
+
+
+
+Cílem znalostní báze je zajistit rychlé vyhledávání informací a oddělení know-how od lidí.
+
+
+
+Servisní zpráva se vytváří pravidelně, obvykle měsíčně.
+Ano
+
+
+
+Jaký je postup zpracování požadavku primární podporou?
+1.
+Uživatel IS kontaktuje pracovníka helpdesku.
+2.
+Pracovník helpdesku analyzuje informace, případně požádá o jejich doplnění.
+3.
+Pracovník helpdesku s využitím evidence známých problémů a popisu jejich řešení nebo náhradních postupů poradí uživateli, jak nahlášený problém vyřešit nebo jak jej dočasně obejít.
+4.
+Pracovník helpdesku informuje uživatele o předání problému k řešení sekundární podpoře.
+
+
+
+
+
+záložní řešení
+Sada opatření umožňujících pokračovat v práci, když ICT řešení jako celek nelze používat z důvodu havárie nebo chyb.
+náhradní postupy
+Aplikují se v případě, že některou funkčnost implementovanou v IS nelze z důvodu chyby použít.
+
+
+
+
+Každodenní procesy v našem systému mají automatické fáze, ale některé kritické úseky a rozhodnutí kontroluje a potvrzuje operátor. Díky chybě v komponentě třetí strany použité v našem systému nastala po několika měsících provozu situace, že se poškodili práva pro všechny uživatelské role v systému. Díky tomu nebyl schopen operátor v systému dělat téměř nic, ani ovládat kritické části procesu. Řešení spočívalo v tom, že jsme s operátorem uspořádali konferenční hovor a kolega ze servisního týmu přes servisní konzoli posouval proces dle instrukcí operátora. Proces v našem systému doběhl jak měl. O několik hodin později jsme implementovali opravu a následně v databázi opravili poškozené záznamy s právy uživatelů (tabulky s právy obnoveny z poslední zálohy databáze).
+
+O který typ řešení IT problému se jedná?
+záložní řešení
+
+
+
+Sekundární podpora řeší takové případy, u nichž nejsou doposud známá řešení, a tudíž je nutné tato řešení analyzovat, navrhnout, implementovat a otestovat tak, aby se z nich stala řešení známá neboli standardní.
+
+
+
+
+Které způsoby řešení problému sekundární podporou existují?
+servisní zásah
+opravný patch
+datové opravy
+
+
+
+Ze kterých důvodů se instaluje nový patch?
+přechod na novější verzi software
+implementace vyšší bezpečnosti
+oprava chyb
+
+
+
+
+Co všechno může obsahovat servisní zpráva?
+vyhodnocení plnění SLA parametru
+seznam řešených změn
+provozní statistiky
+
+
+
+
+Cílem servisní dokumentace je zajistit včasné vyhledávání informací a oddělení know-how od lidí.
+
+
+
+
+Kdo je uživatelem servisní dokumentace?
+pracovníci provozu
+pracovníci sekundární podpory
+vývojáři
+pracovníci primární podpory
+
+
+
+Servisní tým není možné umístit přímo u zákazníka.
+Ne
+
+
+
+
+
+Náš systém provádí analýzu provozu sítě ze vstupních souborů. Vstupy posílá několik provozovatelů přenosových soustav na denní bázi. Vstupy prochází množstvím validací a pokud se zjistí nesrovnalost, je potřeba vstupy upravit a celý proces ověření spustit znovu. U jednoho z poskytovatelů vstupních dat došlo k havárii systému, dodané soubory byly poškozené a díky tomu nebyl schopen několik vstupních souborů (povinný vstup) poskytnout. V důsledku toho, celý denní obchodní proces v našem systému nemohl pokračovat. Jako řešení byly použity vstupy z předchozího dne, ručně jsme s poskytovatelem upravili hodnoty do požadované podoby a nahráli do našeho systému.
+
+O který typ řešení IT problému se jedná?
+záložní řešení
+
+
+
+Náš systém je integrován s dalšími systémy přes různé komunikační kanály (M2M komunikace). Z důvodu zvýšení bezpečnosti došlo k ohlášené změně protokolu na šifrovanou výměnu dat. Přestože byli komunikující strany upozorněny několik týdnů dopředu na změnu v komunikaci, následně probíhaly E2E testy, došlo po spuštění do ostrého provozu k nefunkční komunikaci s jedním z okolních systémů. Řešení spočívalo v aktualizaci komunikačního protokolu jednoho z okolních systémů a změna vyžadovala několik dní na jejich straně. Proto během několika hodin jsme zřídili pro integraci náhradní SFTP spojení doplněné o sadu drobných skriptů a data vyměňovali přes tento náhradní komunikační kanál. Výměna dat tak mohla probíhat dál v automatickém režimu bez výrazného omezení komfortu obou stran.
+
+O který typ řešení IT problému se jedná?
+náhradní postup

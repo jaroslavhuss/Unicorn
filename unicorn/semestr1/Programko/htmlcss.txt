@@ -1,0 +1,3 @@
+Kam vkládáme samotný obsah webové stránky?
+
+Vše vkládáme do <body>

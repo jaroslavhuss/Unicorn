@@ -1,0 +1,59 @@
+/*Úvodní nastavení*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/*
+Nastavení hlavního contejneru a wrapperu, aby to bylo všechno na středu
+*/
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  padding: 30px;
+  background: #ffe51c;
+}
+/*
+Styly pro form
+*/
+#calcForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#calcForm h2 {
+  margin: 10px 0px;
+}
+#calcForm input {
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.buttons div {
+  padding: 10px 15px;
+  margin: 0px 3px;
+  background: #ab980b;
+  color: white;
+  border-radius: 7px;
+}
+#reset {
+  padding: 10px 15px;
+  margin: 0px 3px;
+  background: #ab980b;
+  color: white;
+  border-radius: 7px;
+  border: none;
+}
+#vysledek {
+  margin-top: 10px;
+}

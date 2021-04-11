@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulačka</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <form id="calcForm">
+          <label for="firstNumber">
+            <h2>První číslo</h2>
+            <input
+              type="number"
+              name="firstNumber"
+              id="firstNumber"
+              value="0"
+            />
+          </label>
+          <label for="secondNumber">
+            <h2>Druhý číslo</h2>
+            <input
+              type="number"
+              name="secondNumber"
+              id="secondNumber"
+              value="0"
+            />
+          </label>
+          <br />
+          <div class="buttons">
+            <div id="plus">+</div>
+            <div id="minus">-</div>
+            <div id="divide">/</div>
+            <div id="multiple">*</div>
+          </div>
+          <br />
+          <div id="reset">Resetovat</div>
+          <div id="vysledek"></div>
+        </form>
+      </div>
+    </div>
+    <script src="server.js"></script>
+  </body>
+</html>
