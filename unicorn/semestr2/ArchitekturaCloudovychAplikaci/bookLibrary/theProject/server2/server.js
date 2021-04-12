@@ -3,6 +3,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const {dbConnect} = require("./databse/connect");
 const saveRecipe = require("./routes/saveRecipe");
+const saveSurovinu = require("./routes/saveSurovina");
+const getSuroviny = require("./routes/getSurovina");
 /**
  * MIDDLEWARE
  */
@@ -16,10 +18,15 @@ const saveRecipe = require("./routes/saveRecipe");
 new dbConnect().connect();
 
 /**
- * ROUTY
+ * ROUTY POST
  */
 app.use("/", saveRecipe)
+app.use("/", saveSurovinu);
+app.use("/", getSuroviny);
 
+/**
+ * ROUTY GET
+ */
 app.get("/", (req,res) => {
     res.send("Ahoj");
 })
@@ -35,9 +42,19 @@ app.listen(PORT, (err) => {
     `);
     console.table([
         { 
-         Popis: "Uloz recept",
+         Popis: "Uloží celý recept",
          URL:"http://localhost:5000/save-recipe",
          Metoda: "POST" 
+        },
+        { 
+         Popis: "Uloží surovinu, pokud ještě neexistuje",
+         URL:"http://localhost:5000/save-surovina",
+         Metoda: "POST" 
+        },
+        { 
+         Popis: "Získá seznam všech surovin",
+         URL:"http://localhost:5000/get-suroviny",
+         Metoda: "GET" 
         },
       ]
     )
