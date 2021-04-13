@@ -4,7 +4,7 @@ import { GlobalContext } from '../context/GlobalContext';
 const VyberSuroviny = ({suroviny}) => {
     
 const [seznamSurovin, setSeznamSurovin] = useState([])
-const {zapnutiVypnutiPaneluSVyberemSuroviny} = useContext(GlobalContext);
+const {zapnutiVypnutiPaneluSVyberemSuroviny,vyberSurovinu} = useContext(GlobalContext);
 const [inputState, setInputState] = useState("");
 useEffect(() => {
     setSeznamSurovin(suroviny);
@@ -22,6 +22,13 @@ const hledejSuroviny = (e) => {
     })
    setSeznamSurovin(search);
 }
+
+const vymazZvoleneSurovinyZNabidky = (item) => {
+    const cistaData = seznamSurovin.filter((polozka) => {
+        return item.name !== polozka.nazevSuroviny
+    })
+    setSeznamSurovin(cistaData);
+}
 return (
         <div className="vyberSurovin">
             <div className="plocha">
@@ -30,10 +37,18 @@ return (
                       zapnutiVypnutiPaneluSVyberemSuroviny(false)  
                     }
                 }><BsFillXCircleFill /></div>
-                <div className="vyhledavaciPole"><input value={inputState} onInput={hledejSuroviny} type="text" placeholder="vyhledat surovinu"/></div>
+                <div className="vyhledavaciPole"><input value={inputState} onInput={hledejSuroviny} type="text" placeholder={`Vyhledat suroviny (${seznamSurovin.length})`} /></div>
                 <div className="suroviny">{seznamSurovin.map((surovina,index) => {
                     return(
-                        <div className="surovina" key={index}>{surovina.nazevSuroviny}</div>
+                        <div onClick={() => {
+                            const object = {
+                                name:seznamSurovin[index].nazevSuroviny,
+                                mnozstvi:0
+                            }
+                            vyberSurovinu(object);
+                            vymazZvoleneSurovinyZNabidky(object)
+                        
+                        }} className="surovina" key={index}>{surovina.nazevSuroviny}</div>
                     )
                 })}
                 </div>

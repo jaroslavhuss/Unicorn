@@ -24,14 +24,25 @@ export const GlobalProvider = ({ children }) => {
     })
   }
 
+  const setVybraneSuroviny = (arr) => {
+    dispatch({
+      type:"SET_VYBRANE_SUROVINY",
+      payload:arr
+    })
+  }
+
   return (
     <GlobalContext.Provider
       value={{
+      //Seznam vybraných surovin do receptu
       vybraneSuroviny:state.vybraneSuroviny,
-      zapniPanelSVyberemSurovin:state.zapniPanelSVyberemSurovin,
-      vyberSurovinu,
-      zapnutiVypnutiPaneluSVyberemSuroviny
+      vyberSurovinu,//Funkce na přidání do statu
+      setVybraneSuroviny,//Funkce na měnění statu
       
+      zapniPanelSVyberemSurovin:state.zapniPanelSVyberemSurovin,//Vypne zapne přidání surovin
+      zapnutiVypnutiPaneluSVyberemSuroviny//Mění state
+      
+
       }}
     >
       {children}
