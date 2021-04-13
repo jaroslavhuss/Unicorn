@@ -13,13 +13,31 @@ const sampleData = [
     {nazevSuroviny:"Jelito"},
     {nazevSuroviny:"Karel"},
     {nazevSuroviny:"Marek"},
-    {nazevSuroviny:"Lesba"}
+    {nazevSuroviny:"Nanuk"},
+    {nazevSuroviny:"Eskymák"},
+    {nazevSuroviny:"Čokoláda"},
+    {nazevSuroviny:"Masakr"},
+    {nazevSuroviny:"MBPro"},
+    {nazevSuroviny:"Zeď"},
+    {nazevSuroviny:"Fotka"},
+    {nazevSuroviny:"Kua"},
+    {nazevSuroviny:"Asdfas"},
+    {nazevSuroviny:"JSjkSLS"},
+    {nazevSuroviny:"omg"},
+    {nazevSuroviny:"Karel"},
+    {nazevSuroviny:"Ředkev"},
+    {nazevSuroviny:"Hukot"},
+    {nazevSuroviny:"Fuak"},
+    {nazevSuroviny:"Pařina"},
+    {nazevSuroviny:"Laos"},
+    {nazevSuroviny:"Heo"},
+    {nazevSuroviny:"Deo"},
 ]
-res.json(sampleData);
+res.json({data:sampleData,
+    msg:"Data byla získána"});
 
-
-   /**
-    * Surovina.find({}, (err,docs) => {
+/*
+   Surovina.find({}, (err,docs) => {
          if(err){
            return  res.json({
                  msg:"Server není připojený k databázi"
@@ -40,9 +58,8 @@ res.json(sampleData);
     }).catch(() => {
         console.log("Server není připojený k databázi")
     })
-    */
      
- 
+ */
 })
 
 module.exports = getSuroviny;
