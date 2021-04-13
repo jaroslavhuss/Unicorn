@@ -4,8 +4,10 @@ import {Route, Switch, BrowserRouter} from "react-router-dom";
 import MainPage from "./Pages/MainPage";
 import Menu from "./components/menu";
 import AddRecipe from "./Pages/AddRecipe";
+import { GlobalProvider } from "./context/GlobalContext";
 const App = () => {
   return (
+    <GlobalProvider>
    <BrowserRouter>
    <Menu />
     <Switch>
@@ -13,6 +15,7 @@ const App = () => {
       <Route exact path="/add-recipe"  component={AddRecipe}/>
     </Switch>
    </BrowserRouter>
+   </GlobalProvider>
   )
 }
 

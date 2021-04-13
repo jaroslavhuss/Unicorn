@@ -1,11 +1,24 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import {  BiReceipt, BiPencil,BiTime, BiAddToQueue, BiSave, BiImage, BiListPlus } from "react-icons/bi";
 import { Editor } from "@tinymce/tinymce-react";
+import VyberSurovin from "../components/vyberSuroviny";
+import { GlobalContext } from '../context/GlobalContext';
 
 const AddRecipe = () => {
-  const [editorState, seteditorState] = useState("")
+    const {zapniPanelSVyberemSurovin,zapnutiVypnutiPaneluSVyberemSuroviny} = useContext(GlobalContext);
+  const [editorState, seteditorState] = useState("");
+    const [suroviny, setSuroviny] = useState([]);
+  const getVsechnySuroviny = async () => {
+      zapnutiVypnutiPaneluSVyberemSuroviny(true);
+   fetch("http://localhost:5000/get-suroviny").then((data) => {
+       return data.json();
+   }).then((data) => {
+       setSuroviny(data);
+   })
+  }
     return (
        <div className="layout">
+          {zapniPanelSVyberemSurovin?<VyberSurovin suroviny={suroviny}/>:<></>} 
            <div className="column" style={{
                   height:"90vh",
                    overflow: "scroll"
@@ -40,7 +53,9 @@ const AddRecipe = () => {
                         <div className="card">
                             <h3><BiListPlus/> Seznam použitých surovin</h3>
                             <br/>
-                           <div className="btn btn-add-item"><BiAddToQueue /> Přidat surovinu</div>
+                           <div onClick={() => {
+                               getVsechnySuroviny()
+                           }} className="btn btn-add-item"><BiAddToQueue /> Přidat surovinu</div>
                         </div>
                     </div>
                     <div className="btn btn-save-item" onClick={() => {

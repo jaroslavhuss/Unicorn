@@ -5,6 +5,7 @@ const {dbConnect} = require("./databse/connect");
 const saveRecipe = require("./routes/saveRecipe");
 const saveSurovinu = require("./routes/saveSurovina");
 const getSuroviny = require("./routes/getSurovina");
+
 /**
  * MIDDLEWARE
  */
@@ -15,7 +16,7 @@ const getSuroviny = require("./routes/getSurovina");
 /**
  * Připojení k databázi
  */
-new dbConnect().connect();
+//new dbConnect().connect();
 
 /**
  * ROUTY POST

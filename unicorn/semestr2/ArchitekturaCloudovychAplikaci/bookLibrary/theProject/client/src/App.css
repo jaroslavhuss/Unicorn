@@ -116,3 +116,71 @@ h1{
 .card{
   margin-top:20px;
 }
+.vyberSurovin{position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  background: rgba(0,0,0,0.4);
+z-index:100;
+}    
+.vyberSurovin .plocha{
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vyberSurovin .plocha .btn{
+  justify-self: center;
+  align-self: center;
+}
+.vyberSurovin .plocha .zavrit{
+  text-align: right;
+    color: #bb0707;
+}
+.vyberSurovin .plocha .zavrit svg{
+  font-size:40px;
+  cursor:pointer;
+}
+.vyberSurovin .plocha .vyhledavaciPole input{
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  border-radius: 3px;
+  border: none;
+  background: #e4e4e4;
+  text-align: center;
+}
+.vyberSurovin .plocha .suroviny{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.vyberSurovin .plocha .surovina{
+  padding: 6px 13px;
+  background: wheat;
+  margin: 3px;
+  border-radius: 3px;
+  color: #ba0706;
+  text-transform: lowercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+.vyberSurovin .plocha .surovina:hover{
+  padding: 6px 13px;
+  background: #e8ca92;
+  margin: 3px;
+  border-radius: 3px;
+  color: black;
+  text-transform: lowercase;
+  cursor: pointer;
+  font-weight: bold;
+
+}
