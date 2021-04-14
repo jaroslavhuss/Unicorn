@@ -21,11 +21,19 @@ const AddRecipe = () => {
   const menicMnozstvi = (e) => {
       const index = e.target.getAttribute("index");
       vybraneSuroviny[index].mnozstvi = parseInt(e.target.value);
-setVybraneSuroviny(vybraneSuroviny);
+      setVybraneSuroviny(vybraneSuroviny);
+  }
+
+  const smazZvolenouSurovinu = (e) => {
+      const index = e.target.getAttribute("index");
+      const ocisteneVybraneSuroviny = vybraneSuroviny.filter((item) => {
+          return item.name !== vybraneSuroviny[index].name;
+      })
+      setVybraneSuroviny(ocisteneVybraneSuroviny);
   }
     return (
        <div className="layout">
-          {zapniPanelSVyberemSurovin?<VyberSurovin suroviny={suroviny}/>:<></>} 
+          {zapniPanelSVyberemSurovin?<VyberSurovin vybranesuroviny={vybraneSuroviny} suroviny={suroviny}/>:<></>} 
            <div className="column" style={{
                   height:"90vh",
                    overflow: "scroll"
@@ -72,7 +80,7 @@ setVybraneSuroviny(vybraneSuroviny);
                             <div className="vypisSuroviny">
                           {vybraneSuroviny.map(({name},index) => {
                               return(
-                                  <div className="polozka" key={index}><strong>{name}(g):</strong><input key={index} onInput={menicMnozstvi} index={index}type="number" name={name} value={vybraneSuroviny[index].mnozstvi}/></div>
+                                  <div className="polozka" key={index}><strong>{name}(g):</strong><input key={index} onInput={menicMnozstvi} index={index}type="number" name={name} value={vybraneSuroviny[index].mnozstvi}/><div className="deleteThisItem" index={index} onClick={smazZvolenouSurovinu}>smazat</div></div>
                               )
                           })}
                           </div>

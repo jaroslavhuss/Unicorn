@@ -1,17 +1,23 @@
 import React, {useState, useContext, useEffect} from 'react'
 import { BsFillXCircleFill } from "react-icons/bs";
 import { GlobalContext } from '../context/GlobalContext';
-const VyberSuroviny = ({suroviny}) => {
+const VyberSuroviny = ({suroviny,vybranesuroviny}) => {
     
 const [seznamSurovin, setSeznamSurovin] = useState([])
 const {zapnutiVypnutiPaneluSVyberemSuroviny,vyberSurovinu} = useContext(GlobalContext);
 const [inputState, setInputState] = useState("");
 useEffect(() => {
-    setSeznamSurovin(suroviny);
+    const filtered = suroviny.filter( function( el ) {
+        const vybraneSuroviny = vybranesuroviny.map((surovina) => {
+            return surovina.name;
+        })
+        return vybraneSuroviny.indexOf( el.nazevSuroviny ) < 0;
+      } );
+    setSeznamSurovin(filtered);
     return () => {
         return false;
     }
-}, [suroviny]);
+}, [suroviny, vybranesuroviny]);
 
 const hledejSuroviny = (e) => {
     const value = e.target.value;

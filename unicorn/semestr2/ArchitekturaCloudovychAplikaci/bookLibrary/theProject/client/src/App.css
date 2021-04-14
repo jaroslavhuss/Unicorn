@@ -114,6 +114,7 @@ h1{
   box-shadow: -6px -8px 1pc -17px;
 }
 .add-recipe .vypisSuroviny .polozka{
+  position:relative;
   display: flex;
   flex-direction: column;
   padding: 2px 10px;
@@ -122,6 +123,21 @@ h1{
   border-radius: 4px;
   box-shadow: 2px 19px 2pc -13px;
   color: #565555;
+}
+.add-recipe .polozka .deleteThisItem{
+  position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    background: #d6098b;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: -1px 4px 2pc -5px black;
 }
 .add-recipe .vypisSuroviny .polozka strong{
   font-weight: normal;
