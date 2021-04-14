@@ -5,6 +5,7 @@ const {dbConnect} = require("./databse/connect");
 const saveRecipe = require("./routes/saveRecipe");
 const saveSurovinu = require("./routes/saveSurovina");
 const getSuroviny = require("./routes/getSurovina");
+const cors = require("cors");
 
 /**
  * MIDDLEWARE
@@ -15,15 +16,17 @@ const getSuroviny = require("./routes/getSurovina");
 
 /**
  * Připojení k databázi
+ * 
+ * S databází opatrně při vývoji, raději používejte dummy data! 
  */
-//new dbConnect().connect();
+new dbConnect().connect();
 
 /**
  * ROUTY POST
  */
-app.use("/", saveRecipe)
-app.use("/", saveSurovinu);
-app.use("/", getSuroviny);
+app.use("/",cors(), saveRecipe)
+app.use("/",cors(), saveSurovinu);
+app.use("/",cors(), getSuroviny);
 
 /**
  * ROUTY GET

@@ -2,7 +2,7 @@ const getSuroviny = require("express").Router();
 const Surovina = require("../models/surovina");
 
 getSuroviny.get("/get-suroviny", async (req,res) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    //res.setHeader('Access-Control-Allow-Origin', '*');
 const sampleData = [
     {nazevSuroviny:"Čočka"},
     {nazevSuroviny:"Hovězí"},
@@ -33,10 +33,9 @@ const sampleData = [
     {nazevSuroviny:"Heo"},
     {nazevSuroviny:"Deo"},
 ]
-res.json({data:sampleData,
-    msg:"Data byla získána"});
+//res.json({data:sampleData,msg:"Data byla získána"});
 
-/*
+
    Surovina.find({}, (err,docs) => {
          if(err){
            return  res.json({
@@ -59,7 +58,7 @@ res.json({data:sampleData,
         console.log("Server není připojený k databázi")
     })
      
- */
+
 })
 
 module.exports = getSuroviny;

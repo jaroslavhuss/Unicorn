@@ -90,8 +90,8 @@ const AddRecipe = () => {
           soucetGramaze:soucetGramaze,
           fullText:(() => {
               let finalstring = `${nazevReceptu} ${editorState} ${dobaPripravy} `;
-              suroviny.forEach((item) => {
-                  finalstring += item.nazevSuroviny + " ";
+              vybraneSuroviny.forEach((item) => {
+                  finalstring += item.name + " ";
               })
               return finalstring;
           })()
@@ -99,6 +99,15 @@ const AddRecipe = () => {
       console.log(schemaObjektu);
   }
   
+  //Test animace
+  const pridejTridu = (e) => {
+      const parent = e.target.parentElement;
+      parent.setAttribute("class","polozka to-be-deleted")
+  }
+  const odstranTridu = (e) => {
+    const parent = e.target.parentElement;
+    parent.setAttribute("class","polozka")
+  }
     return (
        <div className="layout">
           {zapniPanelSVyberemSurovin?<VyberSurovin vybranesuroviny={vybraneSuroviny} suroviny={suroviny}/>:<></>} 
@@ -142,13 +151,13 @@ const AddRecipe = () => {
                             }} placeholder="Umístěte externí odkaz" type="text" name="popis" value={nahledovyObrazek} style={{width:"50%"}}/>
                         </div>
                         <div className="card">
-                            <h3><BiListPlus/> Seznam použitých surovin ({soucetGramaze}g)</h3>
+                            <h3><BiListPlus/> Seznam použitých surovin ({soucetGramaze}g) - pro jednu osobu</h3>
                             <p>Všechny hodnoty zapistuje v gramech na jednu osobu!</p>
                             <br/>
                             <div className="vypisSuroviny">
                           {vybraneSuroviny.map(({name},index) => {
                               return(
-                                  <div className="polozka" key={index}><strong>{name}(g):</strong><input key={index} onInput={menicMnozstvi} index={index}type="number" name={name} value={vybraneSuroviny[index].mnozstvi}/><div className="deleteThisItem" index={index} onClick={smazZvolenouSurovinu}>smazat</div></div>
+                                  <div className="polozka" key={index}><strong>{name}(g):</strong><input key={index} onInput={menicMnozstvi}  index={index}type="number" name={name} value={vybraneSuroviny[index].mnozstvi}/><div className="deleteThisItem" index={index} onClick={smazZvolenouSurovinu} onMouseOver={pridejTridu} onMouseOut={odstranTridu}>smazat</div></div>
                               )
                           })}
                           </div>

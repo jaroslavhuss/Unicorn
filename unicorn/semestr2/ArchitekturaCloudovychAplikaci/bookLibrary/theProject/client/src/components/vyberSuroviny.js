@@ -1,8 +1,9 @@
 import React, {useState, useContext, useEffect} from 'react'
-import { BsFillXCircleFill } from "react-icons/bs";
+import { BsFillXCircleFill,BsSearch } from "react-icons/bs";
 import { GlobalContext } from '../context/GlobalContext';
+import PridejSurovinu from "./pridejSurovinu";
 const VyberSuroviny = ({suroviny,vybranesuroviny}) => {
-    
+const [otevritPridaniSuroviny, setOtevritPridaniSuroviny] = useState(false);    
 const [seznamSurovin, setSeznamSurovin] = useState([])
 const {zapnutiVypnutiPaneluSVyberemSuroviny,vyberSurovinu} = useContext(GlobalContext);
 const [inputState, setInputState] = useState("");
@@ -35,6 +36,11 @@ const vymazZvoleneSurovinyZNabidky = (item) => {
     })
     setSeznamSurovin(cistaData);
 }
+
+const zavriDialogPridaniSuroviny = () => {
+    setOtevritPridaniSuroviny(false)
+}
+
 return (
         <div className="vyberSurovin">
             <div className="plocha">
@@ -58,7 +64,8 @@ return (
                     )
                 })}
                 </div>
-                <div className="btn">Požadovaná surovina v seznamu chybí?</div>
+                <div className="btn" onClick={()=>setOtevritPridaniSuroviny(!otevritPridaniSuroviny)}><BsSearch/> Požadovaná surovina v seznamu chybí?</div>
+                {otevritPridaniSuroviny?<PridejSurovinu zavri={zavriDialogPridaniSuroviny}/>:<></>}
             </div>
         </div>
     )

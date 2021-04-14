@@ -94,7 +94,9 @@ h1{
 }
 .add-recipe{
   width:100%;
+  position:relative;
 }
+
 .add-recipe .vypisSuroviny{
   display: flex;
   flex-direction: column;
@@ -102,6 +104,12 @@ h1{
   align-items: stretch;
   text-align: center;
   margin-bottom: 22px;
+}
+.add-recipe .vypisSuroviny .to-be-deleted{
+ 
+  opacity:0.4;
+  transition:all 0.5s ease;
+  box-shadow: 3px 2px 2pc -12px !important;
 }
 .add-recipe .vypisSuroviny input[type="number"]{
   text-align: center;
@@ -124,25 +132,41 @@ h1{
   box-shadow: 2px 19px 2pc -13px;
   color: #565555;
 }
+.add-recipe .vypisSuroviny .polozka::before{
+  content:"";
+  background-image:url(./assets/cutlery.svg);
+  background-repeat: no-repeat;
+  width:66px;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0.08;
+}
 .add-recipe .polozka .deleteThisItem{
   position: absolute;
-    top: 0;
-    right: 0;
-    text-transform: uppercase;
-    background: #d6098b;
-    color: white;
-    padding: 2px 4px;
-    border-radius: 4px;
-    margin: 2px;
-    font-size: 12px;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: -1px 4px 2pc -5px black;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  background: #d6098b;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px;
 }
 .add-recipe .vypisSuroviny .polozka strong{
-  font-weight: normal;
-    font-size: 15px;
-    padding: 3px;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 3px;
+  text-transform: uppercase;
+  color: #d50a8b;
+  font-style: italic;
 }
 .recipe-canvas
 { 
@@ -171,6 +195,11 @@ h1{
   font-style: italic;
   padding: 4px;
 }
+.card h3{
+  text-transform: uppercase;
+  color: #805725;
+  font-style: italic;
+}
 .vyberSurovin{position: absolute;
   width: 100vw;
   height: 100vh;
@@ -192,6 +221,39 @@ z-index:100;
   flex-direction: column;
   justify-content: center;
   margin:20px;
+}
+.vyberSurovin .plocha .pridaniSuroviny{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  box-shadow: 3px 3px 3pc -25px;
+  padding: 13px;
+  border-radius: 12px;
+  position:relative
+}
+.vyberSurovin .plocha .pridaniSuroviny .zavrit{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+.vyberSurovin .pridaniSuroviny input[type="text"]{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  background: #e6e6e6;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.vyberSurovin .plocha .btn-pridej-surovinu{
+  background: #009688;
 }
 .vyberSurovin .plocha .btn{
   justify-self: center;
@@ -219,7 +281,7 @@ z-index:100;
   flex-direction: row;
   flex-wrap: wrap;
   overflow: scroll;
-  max-height: 70vh;
+  max-height: 40vh;
   height: auto;
 }
 .vyberSurovin .plocha .surovina{
