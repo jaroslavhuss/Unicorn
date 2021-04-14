@@ -1,7 +1,6 @@
 const reducer = (state, action) => {
     switch (action.type) {
       case "VYBER_SUROVINU":
-        console.log(state);
         return {
           ...state,
           vybraneSuroviny: [...state.vybraneSuroviny,action.payload],

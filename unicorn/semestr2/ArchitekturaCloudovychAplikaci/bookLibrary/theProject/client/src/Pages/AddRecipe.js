@@ -5,11 +5,29 @@ import VyberSurovin from "../components/vyberSuroviny";
 import { GlobalContext } from '../context/GlobalContext';
 
 const AddRecipe = () => {
-    const {zapniPanelSVyberemSurovin,zapnutiVypnutiPaneluSVyberemSuroviny,vybraneSuroviny,setVybraneSuroviny} = useContext(GlobalContext);
-  const [editorState, seteditorState] = useState("");
-    const [suroviny, setSuroviny] = useState([]);
-    const [nahledovyObrazek, setNahledovyObrazek] = useState("");
-  const getVsechnySuroviny = async () => {
+    /**
+     * Globální staty a globální funkce (setry, getry)
+     */
+    const {
+        zapniPanelSVyberemSurovin,
+        zapnutiVypnutiPaneluSVyberemSuroviny,
+        vybraneSuroviny,
+        setVybraneSuroviny
+    } = useContext(GlobalContext);
+    /**
+     * Staty které souvisí s uložením celého formuláře
+     */
+    const [nazevReceptu, setNazevReceptu] = useState(""); //Nadpis receptu, název receptu
+    const [editorState, seteditorState] = useState(""); //Popis receptu, vrací HTML
+    const [dobaPripravy, setDobaPripravy] = useState(""); //Doba přípravy state
+    const [nahledovyObrazek, setNahledovyObrazek] = useState(""); //URL náhledového obrázku
+    const [suroviny, setSuroviny] = useState([]); //Seznam všech surovin, použitých v receptu
+    const [soucetGramaze, setSoucetGramaze] = useState(0);
+    
+    /**
+     * @description Získá seznam jednotlivých surovin z databáze
+     */
+    const getVsechnySuroviny = async () => {
       zapnutiVypnutiPaneluSVyberemSuroviny(true);
    fetch("http://localhost:5000/get-suroviny").then((data) => {
        return data.json();
@@ -18,19 +36,69 @@ const AddRecipe = () => {
    })
   }
 
+  /**
+   * 
+   * @param array Pole objektů
+   * @description Přepočítá sumu všech aktivně přidaných surovin
+   */
+  const prepocitejGramaz = (array) => {
+    let sum = 0;
+     array.forEach((item) => sum += +item.mnozstvi);
+    setSoucetGramaze(sum);
+}
+
+/**
+ * 
+ * @param e event object
+ * @description Umístí do globálního contextu nové množství určité suroviny
+ */
   const menicMnozstvi = (e) => {
+      //Aby nešlo jít na menší jak 1
+      if(e.target.value && e.target.value > 0){
       const index = e.target.getAttribute("index");
       vybraneSuroviny[index].mnozstvi = parseInt(e.target.value);
       setVybraneSuroviny(vybraneSuroviny);
+      prepocitejGramaz(vybraneSuroviny);
+    }else{
+        //Pokud je hodnota množství suroviny menší nebo rovno nule
+        const index = e.target.getAttribute("index");
+      vybraneSuroviny[index].mnozstvi = parseInt(0);
+      setVybraneSuroviny(vybraneSuroviny);
+      prepocitejGramaz(vybraneSuroviny);
+    }
   }
-
+ 
+  /**
+   * @param e event objekt
+   * @description smaze z globálního contextu (statu) zvolenou surovinu a přepočítá
+   * @todo přepočítá to se zpožděním jednoho itemu, nevím proč, kurva!
+   */
   const smazZvolenouSurovinu = (e) => {
       const index = e.target.getAttribute("index");
-      const ocisteneVybraneSuroviny = vybraneSuroviny.filter((item) => {
-          return item.name !== vybraneSuroviny[index].name;
-      })
+      const ocisteneVybraneSuroviny = vybraneSuroviny.filter((item) =>item.name !== vybraneSuroviny[index].name);
       setVybraneSuroviny(ocisteneVybraneSuroviny);
+      prepocitejGramaz(vybraneSuroviny);
   }
+
+  const ulozitReceptDoDatabaze = () => {
+      const schemaObjektu = {
+          nazevReceptu:nazevReceptu,
+          popis:editorState,
+          dobaPripravy:dobaPripravy,
+          nahledovyObrazek:nahledovyObrazek,
+          suroviny:vybraneSuroviny,
+          soucetGramaze:soucetGramaze,
+          fullText:(() => {
+              let finalstring = `${nazevReceptu} ${editorState} ${dobaPripravy} `;
+              suroviny.forEach((item) => {
+                  finalstring += item.nazevSuroviny + " ";
+              })
+              return finalstring;
+          })()
+      }
+      console.log(schemaObjektu);
+  }
+  
     return (
        <div className="layout">
           {zapniPanelSVyberemSurovin?<VyberSurovin vybranesuroviny={vybraneSuroviny} suroviny={suroviny}/>:<></>} 
@@ -43,7 +111,7 @@ const AddRecipe = () => {
                     <div className="add-recipe">
                         <div className="card">
                             <label htmlFor="nazev-receptu"><h3><BiReceipt/> Název receptu</h3></label>
-                            <input placeholder="Použijte výstižné jméno pro recept" type="text" name="nazev-receptu"/>
+                            <input placeholder="Použijte výstižné jméno pro recept" type="text" onInput={(e) => setNazevReceptu(e.target.value)}/>
                         </div>
                         <div className="card">
                             <label htmlFor="popis"><h3><BiPencil/> Popis</h3></label>
@@ -59,22 +127,22 @@ const AddRecipe = () => {
                         </div>
                         <div className="card">
                             <label htmlFor="popis"><h3><BiTime/> Doba přípravy</h3></label>
-                            <input style={{width:"50%"}} placeholder="12 minut například" type="text" name="popis"/>
+                            <input style={{width:"50%"}} placeholder="12 minut například" type="text" onInput={(e) => setDobaPripravy(e.target.value)}/>
                         </div>
                         <div className="card" style={{
-           backgroundImage:`url(${nahledovyObrazek})`,
-           backgroundSize:"contain",
-           backgroundRepeat:"no-repeat",
-           backgroundPosition:"right top",
-         
-       }}>
+                                backgroundImage:`url(${nahledovyObrazek})`,
+                                backgroundSize:"contain",
+                                backgroundRepeat:"no-repeat",
+                                backgroundPosition:"right top",
+                                
+                            }}>
                             <label htmlFor="popis"><h3><BiImage/> Náhledový obrázek</h3></label>
                             <input onInput={(e) => {
                                 setNahledovyObrazek(e.target.value);
                             }} placeholder="Umístěte externí odkaz" type="text" name="popis" value={nahledovyObrazek} style={{width:"50%"}}/>
                         </div>
                         <div className="card">
-                            <h3><BiListPlus/> Seznam použitých surovin</h3>
+                            <h3><BiListPlus/> Seznam použitých surovin ({soucetGramaze}g)</h3>
                             <p>Všechny hodnoty zapistuje v gramech na jednu osobu!</p>
                             <br/>
                             <div className="vypisSuroviny">
@@ -89,9 +157,7 @@ const AddRecipe = () => {
                            }} className="btn btn-add-item"><BiAddToQueue /> Přidat surovinu</div>
                         </div>
                     </div>
-                    <div className="btn btn-save-item" onClick={() => {
-                        console.log(editorState);
-                    }}><BiSave /> Uložit recept</div>
+                    <div className="btn btn-save-item" onClick={ulozitReceptDoDatabaze}><BiSave /> Uložit recept</div>
                </div>
            </div>
        </div>
