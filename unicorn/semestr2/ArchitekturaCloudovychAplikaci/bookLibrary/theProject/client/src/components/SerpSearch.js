@@ -1,12 +1,13 @@
 import React, {useState, useContext} from 'react'
 import img from "../assets/logo.png";
 import {GlobalContext} from "../context/GlobalContext";
-import {Link} from "react-router-dom"
+import {Link, useHistory} from "react-router-dom"
 
 const SerpSearch = () => {
-    const {setVyhledaneRecepty, vyhledaneRecepty} = useContext(GlobalContext);
+    const {setVyhledaneRecepty, vyhledaneRecepty, setZvolenyRecept} = useContext(GlobalContext);
     const [searchField, setSearchField] = useState("");
     const [errMessage, setErrMessage] = useState("");
+    const route = useHistory();
     const submit = () => {
         if(searchField.length > 2){
             setErrMessage("")
@@ -50,16 +51,19 @@ const SerpSearch = () => {
             }} value={searchField}/>
            <div className="btn-section">
                <input type="submit" className="vyhledat" value="Vyhledat"/>
-              
            </div>
            
         </form>
         <p>{errMessage}</p>
         </div>
         <div className="vypisReceptu">
-        {vyhledaneRecepty.data.map((recept, index) => {
+            {vyhledaneRecepty.data && vyhledaneRecepty.data.length < 1?<p>Bohužel, žádné recepty s tímto dotazem nebyly nalezeny</p>:<></>}
+        {vyhledaneRecepty.data?vyhledaneRecepty.data.map((recept, index) => {
             return(
-                <div key={index}>
+                <div key={index} index={index} onClick={() => {
+                    setZvolenyRecept(index);
+                    route.push("/detail-receptu");
+                }}>
                     <div className="row">
                         <img width="150" src={recept.nahledovyObrazek} alt={recept.nazevReceptu}/>
                         <div className="obsah">
@@ -69,7 +73,7 @@ const SerpSearch = () => {
                     </div>
                  </div>
             )
-        })}
+        }):<></>}
     </div></>
     )
 }

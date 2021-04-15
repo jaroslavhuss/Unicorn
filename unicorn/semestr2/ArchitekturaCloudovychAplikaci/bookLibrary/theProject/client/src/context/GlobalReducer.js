@@ -21,6 +21,11 @@ const reducer = (state, action) => {
           ...state,
           vyhledaneRecepty: action.payload,
         };
+      case "SET_ZVOLENY_RECEPT":
+        return {
+          ...state,
+          zvolenyRecept: action.payload,
+        };
 
       default:
         return state;

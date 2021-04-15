@@ -5,7 +5,8 @@ import GlobalReducer from "./GlobalReducer";
 const hlavniState = {
 vybraneSuroviny:[],
 zapniPanelSVyberemSurovin:false,
-vyhledaneRecepty:[]
+vyhledaneRecepty:[],
+zvolenyRecept:0,
 };
 
 export const GlobalContext = createContext(hlavniState);
@@ -38,6 +39,14 @@ export const GlobalProvider = ({ children }) => {
       payload:arr
     })
   }
+  const setZvolenyRecept = (number) => {
+    dispatch({
+      type:"SET_ZVOLENY_RECEPT",
+      payload:number
+    })
+  }
+
+
   return (
     <GlobalContext.Provider
       value={{
@@ -50,7 +59,10 @@ export const GlobalProvider = ({ children }) => {
       zapnutiVypnutiPaneluSVyberemSuroviny,//Mění state
       
       vyhledaneRecepty:state.vyhledaneRecepty,
-      setVyhledaneRecepty
+      setVyhledaneRecepty,
+
+      zvolenyRecept:state.zvolenyRecept,
+      setZvolenyRecept
       }}
     >
       {children}
