@@ -1,20 +1,26 @@
 const mongoose = require("mongoose");
 const recept = new mongoose.Schema({
-    name:{
-        type:String,
-       
-    },
-    description:{
+    nazevReceptu:{
         type:String,
     },
-    finalAmount:{
+    popis:{
         type:String,
     },
-    preparationLength:{
+    
+    dobaPripravy:{
      type:String,
     },
-    materials:{
-        type:String,
+    nahledovyObrazek:{
+        type:String
+    },
+    suroviny:{
+        type:Array,
+    },
+    soucetGramaze:{
+        type:Number,
+    },
+    fullText:{
+        type:String
     }
 })
 

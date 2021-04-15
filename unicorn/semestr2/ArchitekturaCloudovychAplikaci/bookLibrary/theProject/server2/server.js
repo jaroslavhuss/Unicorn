@@ -5,6 +5,7 @@ const {dbConnect} = require("./databse/connect");
 const saveRecipe = require("./routes/saveRecipe");
 const saveSurovinu = require("./routes/saveSurovina");
 const getSuroviny = require("./routes/getSurovina");
+const getRecept = require("./routes/getRecept");
 const cors = require("cors");
 
 /**
@@ -24,9 +25,10 @@ new dbConnect().connect();
 /**
  * ROUTY POST
  */
-app.use("/",cors(), saveRecipe)
+app.use("/",cors(), saveRecipe);
 app.use("/",cors(), saveSurovinu);
 app.use("/",cors(), getSuroviny);
+app.use("/",cors(), getRecept);
 
 /**
  * ROUTY GET
@@ -56,10 +58,16 @@ app.listen(PORT, (err) => {
          Metoda: "POST" 
         },
         { 
+            Popis: "Získá hledané recepty",
+            URL:"http://localhost:5000/get-recept",
+            Metoda: "POST" 
+        },
+        { 
          Popis: "Získá seznam všech surovin",
          URL:"http://localhost:5000/get-suroviny",
          Metoda: "GET" 
         },
+        
       ]
     )
 });

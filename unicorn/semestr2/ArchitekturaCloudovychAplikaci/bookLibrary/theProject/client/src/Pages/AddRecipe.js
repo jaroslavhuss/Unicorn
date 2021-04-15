@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react'
-import {  BiReceipt, BiPencil,BiTime, BiAddToQueue, BiSave, BiImage, BiListPlus } from "react-icons/bi";
+import {  BiReceipt, BiPencil,BiTime, BiAddToQueue, BiSave, BiImage, BiListPlus, BiWinkTongue} from "react-icons/bi";
 import { Editor } from "@tinymce/tinymce-react";
 import VyberSurovin from "../components/vyberSuroviny";
 import { GlobalContext } from '../context/GlobalContext';
@@ -24,6 +24,8 @@ const AddRecipe = () => {
     const [suroviny, setSuroviny] = useState([]); //Seznam všech surovin, použitých v receptu
     const [soucetGramaze, setSoucetGramaze] = useState(0);
     
+
+    const [msgZeServeru, setMsgZeServeru] = useState("");
     /**
      * @description Získá seznam jednotlivých surovin z databáze
      */
@@ -87,7 +89,13 @@ const AddRecipe = () => {
           dobaPripravy:dobaPripravy,
           nahledovyObrazek:nahledovyObrazek,
           suroviny:vybraneSuroviny,
-          soucetGramaze:soucetGramaze,
+          soucetGramaze:(() => {
+              let sum = 0;
+              vybraneSuroviny.forEach((item) => {
+                  sum += +item.mnozstvi
+              });
+              return sum;
+          })(),
           fullText:(() => {
               let finalstring = `${nazevReceptu} ${editorState} ${dobaPripravy} `;
               vybraneSuroviny.forEach((item) => {
@@ -96,8 +104,63 @@ const AddRecipe = () => {
               return finalstring;
           })()
       }
-      console.log(schemaObjektu);
+      if(schemaObjektu.nazevReceptu.length <= 0 ){
+          setMsgZeServeru({msg:"Název receptu není vyplněn - je to povinný údaj"})
+      }else if(schemaObjektu.popis.length<=0){
+          setMsgZeServeru({msg:"Popis receptu nebyl vyplňěn - je to povinný údaj"})
+      }else if(schemaObjektu.dobaPripravy.length <=0){
+          setMsgZeServeru({msg:"Doba přípravy není vyplněna - je to povinný údaj"})
+      }else if(schemaObjektu.nahledovyObrazek.length <=0){
+          setMsgZeServeru({msg:"Náhledový obrázek nebyl přidán, využijte prosím externí URL adresy - je to povinný údaj"})
+      }else if(schemaObjektu.suroviny.length <=0){
+          setMsgZeServeru({msg:"Žádné suroviny nebyly přidány - prosím, přidejte všechny suroviny, která do receptu patří."})
+      }else{
+      fetch("http://localhost:5000/save-recipe",{
+        method: 'post',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(schemaObjektu)
+      }).then((msg) => {
+          return msg.json();
+      }).then((msg) => {
+          setMsgZeServeru(msg);
+          console.log(msg)
+          if(msg.msg === "Recept byl úspěšně uložen"){
+             window.location.reload();
+          }
+      }).catch((err) => {
+          if(err){
+              setMsgZeServeru("Nelze se připojit k server, opakujte akci později...")
+          }
+      })
+    }
   }
+
+  const dummyVyplneniReceptu = () => {
+      setNazevReceptu("Jihočeský Guláš");
+      seteditorState(`<p><strong style="box-sizing: border-box; color: #333333; font-family: 'Roboto Condensed', sans-serif; font-size: 14px; background-color: #ffffff;">Postup:</strong></p>
+      <p style="box-sizing: border-box; margin: 0px 0px 10px; color: #333333; font-family: 'Roboto Condensed', sans-serif; font-size: 14px; background-color: #ffffff;">1. Na s&aacute;dle orestujeme dozlatova na drobn&eacute; kostičky nakr&aacute;jenou oči&scaron;těnou cibuli<br style="box-sizing: border-box;" />2. Přid&aacute;me mletou červenou papriku, ihned vlož&iacute;me kostky osolen&eacute;ho a pepřem okořeněn&eacute;ho masa, podus&iacute;me ve vlastn&iacute; &scaron;ť&aacute;vě<br style="box-sizing: border-box;" />3. Opečen&eacute; maso podlijeme horkou vodou, okořen&iacute;me km&iacute;nem a rozdrcen&yacute;m česnekem a dus&iacute;me doměkka<br style="box-sizing: border-box;" />4. Do hotov&eacute;ho gul&aacute;&scaron;e vm&iacute;ch&aacute;me je&scaron;tě rajsk&yacute; protlak a přid&aacute;me podu&scaron;enou anglickou slaninu nakr&aacute;jenou na pl&aacute;tky<br style="box-sizing: border-box;" />5. Okořen&iacute;me drcen&yacute;m cel&yacute;m pepřem a cca 5 minut v&scaron;e povař&iacute;me.</p>
+      <p><strong style="box-sizing: border-box; color: #333333; font-family: 'Roboto Condensed', sans-serif; font-size: 14px; background-color: #ffffff;">Doporučen&iacute;:</strong></p>
+      <p style="box-sizing: border-box; margin: 0px 0px 10px; color: #333333; font-family: 'Roboto Condensed', sans-serif; font-size: 14px; background-color: #ffffff;">Takto připraven&yacute; gul&aacute;&scaron; serv&iacute;rujeme s du&scaron;enou r&yacute;ž&iacute;.</p>`)
+     setDobaPripravy("140 minut");
+     setNahledovyObrazek("https://www.jcted.cz/public/temp/photos/articles/54358/813842_300_285.jpg?lm=1611925219");
+     setVybraneSuroviny([
+{mnozstvi: 600, name: "hovězí maso"},
+ {mnozstvi: 200, name: "cibule"},
+ {mnozstvi: 100, name: "sádlo"},
+ {mnozstvi: 10, name: "rajčatový protlak"},
+ {mnozstvi: 10, name: "česnek"},
+ {mnozstvi: 100, name: "mouka"},
+ {mnozstvi: 5, name: "sladká paprika"},
+ {mnozstvi: 300, name: "čerstvé houby"},
+ {mnozstvi: 0, name: "sůl"},
+ {mnozstvi: 0, name: "pepř"},
+ {mnozstvi: 0, name: "sušená majoránka"},
+ {mnozstvi: 0, name: "kmín"}
+     ])
+    }
   
   //Test animace
   const pridejTridu = (e) => {
@@ -108,6 +171,7 @@ const AddRecipe = () => {
     const parent = e.target.parentElement;
     parent.setAttribute("class","polozka")
   }
+
     return (
        <div className="layout">
           {zapniPanelSVyberemSurovin?<VyberSurovin vybranesuroviny={vybraneSuroviny} suroviny={suroviny}/>:<></>} 
@@ -120,7 +184,7 @@ const AddRecipe = () => {
                     <div className="add-recipe">
                         <div className="card">
                             <label htmlFor="nazev-receptu"><h3><BiReceipt/> Název receptu</h3></label>
-                            <input placeholder="Použijte výstižné jméno pro recept" type="text" onInput={(e) => setNazevReceptu(e.target.value)}/>
+                            <input placeholder="Použijte výstižné jméno pro recept" type="text" onInput={(e) => setNazevReceptu(e.target.value)} value={nazevReceptu}/>
                         </div>
                         <div className="card">
                             <label htmlFor="popis"><h3><BiPencil/> Popis</h3></label>
@@ -136,7 +200,7 @@ const AddRecipe = () => {
                         </div>
                         <div className="card">
                             <label htmlFor="popis"><h3><BiTime/> Doba přípravy</h3></label>
-                            <input style={{width:"50%"}} placeholder="12 minut například" type="text" onInput={(e) => setDobaPripravy(e.target.value)}/>
+                            <input style={{width:"50%"}} placeholder="12 minut například" type="text" onInput={(e) => setDobaPripravy(e.target.value)} value={dobaPripravy}/>
                         </div>
                         <div className="card" style={{
                                 backgroundImage:`url(${nahledovyObrazek})`,
@@ -164,9 +228,15 @@ const AddRecipe = () => {
                            <div onClick={() => {
                                getVsechnySuroviny()
                            }} className="btn btn-add-item"><BiAddToQueue /> Přidat surovinu</div>
+                           <br />
+                           <div className="btn btn-prefil-item" onClick={dummyVyplneniReceptu}><BiWinkTongue /> Předvyplnit recept</div>
                         </div>
+                        
                     </div>
+              
                     <div className="btn btn-save-item" onClick={ulozitReceptDoDatabaze}><BiSave /> Uložit recept</div>
+                    <p className="serverMsg">{msgZeServeru.msg}</p>
+                 
                </div>
            </div>
        </div>
