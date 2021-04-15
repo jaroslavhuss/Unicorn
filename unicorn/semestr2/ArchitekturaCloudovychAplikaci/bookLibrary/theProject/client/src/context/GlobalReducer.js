@@ -16,6 +16,12 @@ const reducer = (state, action) => {
           ...state,
           vybraneSuroviny: action.payload,
         };
+      case "SET_VYHLEDANE_RECEPTY":
+        return {
+          ...state,
+          vyhledaneRecepty: action.payload,
+        };
+
       default:
         return state;
     }
